@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggleBtn.addEventListener('click', () => {
       const activeTheme = htmlElement.getAttribute('data-theme');
       const nextTheme = activeTheme === 'dark' ? 'light' : 'dark';
-      
+
       localStorage.setItem('kinetic_theme', nextTheme);
       updateThemeUI(nextTheme);
     });
@@ -200,9 +200,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!data) return;
 
     modalTitle.textContent = data.title;
-    
+
     // Render Tags
-    modalTags.innerHTML = data.tags.map(tag => 
+    modalTags.innerHTML = data.tags.map(tag =>
       `<span class="project-tag">${tag}</span>`
     ).join('');
 
@@ -298,4 +298,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // footer year update
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+
 });
