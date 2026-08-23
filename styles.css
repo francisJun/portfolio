@@ -111,6 +111,8 @@ body {
   overflow-x: hidden;
   transition: background-color 0.35s ease, color 0.35s ease;
   -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 a {
@@ -140,6 +142,7 @@ img {
   max-width: 80rem; /* 1280px */
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
 }
 
 /* Typography Utility Classes */
@@ -167,7 +170,7 @@ img {
   align-items: center;
   gap: 1rem;
   font-family: var(--font-headline);
-  font-size: 1.75rem;
+  font-size: clamp(1.35rem, 3vw + 0.5rem, 1.75rem);
   font-weight: 500;
   color: var(--text-primary);
   margin-bottom: 2rem;
@@ -175,10 +178,11 @@ img {
 
 .section-tag::before {
   content: '';
-  width: 3rem;
+  width: 2.5rem;
   height: 2px;
   background-color: var(--color-primary);
   display: inline-block;
+  flex-shrink: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -208,7 +212,7 @@ img {
 
 .brand-logo {
   font-family: var(--font-headline);
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -274,6 +278,7 @@ img {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .theme-toggle-btn:hover {
@@ -293,10 +298,12 @@ img {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 14px rgba(100, 94, 251, 0.25);
   white-space: nowrap;
+  font-size: clamp(0.85rem, 1.5vw + 0.5rem, 1rem);
 }
 
 .btn-primary:hover {
@@ -315,9 +322,11 @@ img {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
   white-space: nowrap;
+  font-size: clamp(0.85rem, 1.5vw + 0.5rem, 1rem);
 }
 
 .btn-outline:hover {
@@ -339,6 +348,7 @@ img {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
 .mobile-menu-btn:hover {
@@ -354,9 +364,9 @@ img {
   right: 0;
   background-color: var(--bg-surface-low);
   border-bottom: 1px solid var(--border-color);
-  padding: 2rem;
+  padding: 1.75rem 1.5rem;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
   z-index: 999;
   box-shadow: var(--shadow-nav);
   backdrop-filter: blur(20px);
@@ -370,10 +380,10 @@ img {
 
 .mobile-nav-link {
   font-family: var(--font-headline);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--text-variant);
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 1rem;
   border-radius: var(--radius-md);
   transition: all 0.2s ease;
 }
@@ -397,8 +407,8 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
   overflow: hidden;
 }
 
@@ -426,7 +436,7 @@ img {
   background-color: var(--bg-surface-highest);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-full);
-  font-size: 0.8rem;
+  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
   font-weight: 600;
   color: var(--color-primary);
   margin-bottom: 1.5rem;
@@ -434,16 +444,16 @@ img {
 
 .hero-title {
   font-family: var(--font-headline);
-  font-size: 3.25rem;
+  font-size: clamp(2.1rem, 4vw + 1rem, 3.25rem);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
   color: var(--text-primary);
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.5vw + 0.5rem, 1.1rem);
   color: var(--text-variant);
   margin-bottom: 2.5rem;
   max-width: 38rem;
@@ -458,6 +468,7 @@ img {
 
 .hero-portrait-card {
   position: relative;
+  width: 100%;
 }
 
 .portrait-frame {
@@ -468,6 +479,7 @@ img {
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-card);
   position: relative;
+  width: 100%;
 }
 
 .portrait-img {
@@ -493,7 +505,7 @@ img {
   bottom: -1.5rem;
   left: -1.5rem;
   background-color: var(--bg-surface-highest);
-  padding: 1.25rem 1.5rem;
+  padding: 1.1rem 1.35rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-card);
@@ -503,7 +515,7 @@ img {
 .code-badge-dots {
   display: flex;
   gap: 0.4rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .dot {
@@ -517,7 +529,7 @@ img {
 
 .code-badge-text {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
   color: var(--color-secondary);
 }
 
@@ -525,7 +537,7 @@ img {
    5. ABOUT / STORY SECTION
    -------------------------------------------------------------------------- */
 .about-section {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background-color: var(--bg-surface-low);
   transition: background-color 0.35s ease;
 }
@@ -533,12 +545,12 @@ img {
 .about-grid {
   display: grid;
   grid-template-columns: 5fr 7fr;
-  gap: 5rem;
+  gap: 4rem;
   align-items: start;
 }
 
 .story-text {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.5vw + 0.5rem, 1.1rem);
   color: var(--text-variant);
   display: flex;
   flex-direction: column;
@@ -555,7 +567,7 @@ img {
 
 .value-card {
   background-color: var(--bg-surface-high);
-  padding: 2rem 1.25rem;
+  padding: 1.75rem 1rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   display: flex;
@@ -572,20 +584,20 @@ img {
 }
 
 .value-icon {
-  font-size: 2.4rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
 }
 
 .value-label {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--text-variant);
 }
 
 .value-title {
   font-family: var(--font-headline);
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
   font-weight: 600;
   color: var(--text-primary);
   margin-top: 0.25rem;
@@ -594,14 +606,14 @@ img {
 .tech-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.65rem;
 }
 
 .tech-pill {
-  padding: 0.5rem 1.25rem;
+  padding: 0.45rem 1.1rem;
   background-color: var(--bg-surface-highest);
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -619,7 +631,7 @@ img {
    6. SELECTED WORKS / PROJECTS SECTION
    -------------------------------------------------------------------------- */
 .projects-section {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background-color: var(--bg-base);
 }
 
@@ -627,25 +639,27 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .section-header-title {
   font-family: var(--font-headline);
-  font-size: 2.75rem;
+  font-size: clamp(2rem, 3.5vw + 0.5rem, 2.75rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .section-header-desc {
   color: var(--text-variant);
   max-width: 32rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
 .section-number {
   font-family: var(--font-headline);
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: var(--bg-surface-highest);
   line-height: 1;
@@ -655,7 +669,7 @@ img {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+  gap: 2.25rem;
 }
 
 .project-card {
@@ -675,7 +689,7 @@ img {
 }
 
 .project-img-wrapper {
-  height: 15rem;
+  height: 14rem;
   position: relative;
   overflow: hidden;
   background-color: var(--bg-surface-highest);
@@ -707,7 +721,7 @@ img {
 }
 
 .project-placeholder-icon {
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
   opacity: 0.8;
@@ -715,12 +729,12 @@ img {
 
 .project-placeholder-text {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-variant);
 }
 
 .project-content {
-  padding: 2rem;
+  padding: 1.75rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -747,14 +761,15 @@ img {
 
 .project-title {
   font-family: var(--font-headline);
-  font-size: 1.35rem;
+  font-size: clamp(1.15rem, 2vw + 0.5rem, 1.35rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+  line-height: 1.3;
 }
 
 .project-desc {
-  font-size: 0.9rem;
+  font-size: clamp(0.85rem, 1.5vw, 0.92rem);
   color: var(--text-variant);
   margin-bottom: 1.5rem;
   line-height: 1.65;
@@ -773,6 +788,7 @@ img {
   cursor: pointer;
   transition: gap 0.25s ease;
   padding: 0;
+  align-self: flex-start;
 }
 
 .btn-link:hover {
@@ -783,7 +799,7 @@ img {
    7. SKILLS & TOOLKIT SECTION
    -------------------------------------------------------------------------- */
 .skills-section {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background-color: var(--bg-surface-low);
 }
 
@@ -795,7 +811,7 @@ img {
 
 .skill-card {
   background-color: var(--bg-surface-high);
-  padding: 2.5rem;
+  padding: 2.25rem 1.75rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
@@ -810,16 +826,17 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .skill-icon-badge {
-  width: 3rem;
-  height: 3rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .skill-icon-primary { background: rgba(167, 165, 255, 0.12); color: var(--color-primary); }
@@ -828,7 +845,7 @@ img {
 
 .skill-title {
   font-family: var(--font-headline);
-  font-size: 1.25rem;
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -836,13 +853,13 @@ img {
 .skill-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.35rem;
 }
 
 .skill-meta {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--text-variant);
@@ -870,7 +887,7 @@ img {
    8. EXPERIENCE / JOURNEY SECTION
    -------------------------------------------------------------------------- */
 .experience-section {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background-color: var(--bg-base);
 }
 
@@ -880,12 +897,12 @@ img {
   margin-left: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 3rem;
 }
 
 .timeline-item {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 2.5rem;
 }
 
 .timeline-node {
@@ -915,42 +932,31 @@ img {
   font-family: var(--font-headline);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--color-primary);
 }
 
 .timeline-role {
   font-family: var(--font-headline);
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 2vw + 0.5rem, 1.3rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-top: 0.2rem;
+  line-height: 1.3;
 }
 
 .timeline-company {
-  font-size: 0.95rem;
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
   font-weight: 600;
   color: var(--color-secondary);
-  margin-bottom: 0.5rem;
-}
-
-.timeline-bullet-list {
-  margin-top: 0.75rem;
-  padding-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  color: var(--text-variant);
-  font-size: 0.95rem;
-  line-height: 1.65;
-  max-width: 48rem;
+  margin-top: 0.25rem;
 }
 
 /* --------------------------------------------------------------------------
-   9. EDUCATION SECTION
+   9. EDUCATION SECTION (FULLY RESPONSIVE)
    -------------------------------------------------------------------------- */
 .education-section {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background-color: var(--bg-surface-low);
 }
 
@@ -962,12 +968,14 @@ img {
 
 .education-card {
   background-color: var(--bg-surface-high);
-  padding: 2.5rem;
+  padding: 2.25rem 2rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
   display: flex;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 1.35rem;
+  min-width: 0; /* Prevents flex items from overflowing container */
 }
 
 .education-card:hover {
@@ -977,8 +985,8 @@ img {
 }
 
 .education-icon {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.25rem;
+  height: 3.25rem;
   border-radius: var(--radius-md);
   background-color: rgba(100, 94, 251, 0.12);
   color: var(--color-primary);
@@ -990,16 +998,21 @@ img {
 
 .education-degree {
   font-family: var(--font-headline);
-  font-size: 1.2rem;
+  font-size: clamp(1.05rem, 2vw + 0.3rem, 1.2rem);
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .education-school {
-  font-size: 0.95rem;
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
   color: var(--color-secondary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+  overflow-wrap: break-word;
 }
 
 .education-date {
@@ -1009,7 +1022,7 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   10. CONTACT SECTION (COMPACT KINETIC SHOWCASE)
+   10. CONTACT SECTION (COMPACT & RESPONSIVE SHOWCASE)
    -------------------------------------------------------------------------- */
 .contact-section {
   padding: 6rem 0;
@@ -1024,6 +1037,7 @@ img {
   box-shadow: var(--shadow-card);
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .contact-bg-glow {
@@ -1044,15 +1058,15 @@ img {
 
 .contact-heading {
   font-family: var(--font-headline);
-  font-size: 2.5rem;
+  font-size: clamp(1.85rem, 3.5vw + 0.5rem, 2.5rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 .contact-subtext {
-  font-size: 1rem;
+  font-size: clamp(0.92rem, 1.5vw, 1rem);
   color: var(--text-variant);
   line-height: 1.65;
   max-width: 44rem;
@@ -1069,15 +1083,17 @@ img {
 
 .contact-pill-item {
   background-color: var(--bg-surface-low);
-  padding: 1.25rem 1.5rem;
+  padding: 1.15rem 1.35rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   transition: all 0.3s ease;
   color: inherit;
   text-decoration: none;
+  min-width: 0; /* Prevents overflow inside flex parent */
+  width: 100%;
 }
 
 .contact-pill-item:hover {
@@ -1088,8 +1104,8 @@ img {
 }
 
 .pill-icon-wrapper {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.6rem;
+  height: 2.6rem;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -1106,10 +1122,11 @@ img {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  min-width: 0; /* Enables text truncation / wrapping inside flex item */
 }
 
 .pill-label {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-family: var(--font-headline);
   font-weight: 600;
   text-transform: uppercase;
@@ -1119,15 +1136,19 @@ img {
 
 .pill-value {
   font-family: var(--font-headline);
-  font-size: 1.05rem;
+  font-size: clamp(0.85rem, 1.8vw, 1.05rem);
   font-weight: 600;
   color: var(--text-primary);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .pill-arrow {
   font-size: 1.1rem;
   color: var(--color-primary);
   transition: transform 0.25s ease;
+  flex-shrink: 0;
 }
 
 .contact-pill-item:hover .pill-arrow {
@@ -1140,6 +1161,7 @@ img {
   border-radius: var(--radius-full);
   background-color: #22c55e;
   box-shadow: 0 0 8px #22c55e;
+  flex-shrink: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -1155,7 +1177,7 @@ img {
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -1173,15 +1195,15 @@ img {
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
-  padding: 3rem;
+  padding: 2.5rem;
   position: relative;
   box-shadow: var(--shadow-nav);
 }
 
 .modal-close-btn {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1.25rem;
+  right: 1.25rem;
   background: var(--bg-surface-highest);
   border: none;
   color: var(--text-primary);
@@ -1202,10 +1224,12 @@ img {
 
 .modal-title {
   font-family: var(--font-headline);
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1rem;
+  padding-right: 2rem;
+  line-height: 1.25;
 }
 
 .modal-tags {
@@ -1217,10 +1241,11 @@ img {
 
 .modal-body {
   color: var(--text-variant);
-  line-height: 1.8;
+  line-height: 1.75;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  font-size: clamp(0.88rem, 1.5vw, 0.98rem);
 }
 
 /* --------------------------------------------------------------------------
@@ -1229,26 +1254,29 @@ img {
 .footer {
   background-color: var(--bg-surface-low);
   border-top: 1px solid var(--border-color);
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 
 .footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
 }
 
 .footer-brand {
   font-family: var(--font-headline);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--text-primary);
 }
 
 .footer-links {
   display: flex;
-  gap: 2rem;
-  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.88rem;
   color: var(--text-variant);
 }
 
@@ -1257,22 +1285,18 @@ img {
 }
 
 .footer-copy {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
 }
 
 /* --------------------------------------------------------------------------
-   13. RESPONSIVE BREAKPOINTS
+   13. COMPREHENSIVE RESPONSIVE BREAKPOINTS
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .hero-grid,
   .about-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-
-  .hero-title {
-    font-size: 2.75rem;
   }
 
   .projects-grid,
@@ -1306,9 +1330,20 @@ img {
 }
 
 @media (max-width: 768px) {
-  .hero-title,
-  .contact-heading {
-    font-size: 2.1rem;
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .about-section,
+  .projects-section,
+  .skills-section,
+  .experience-section,
+  .education-section {
+    padding: 4.5rem 0;
+  }
+
+  .contact-section {
+    padding: 4rem 0;
   }
 
   .projects-grid,
@@ -1317,19 +1352,96 @@ img {
   .contact-pills-grid,
   .value-cards-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .contact-card-compact {
     padding: 2.25rem 1.5rem;
   }
 
+  .timeline {
+    margin-left: 0.75rem;
+    gap: 2.25rem;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
   .modal-box {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.25rem;
   }
 
   .footer .container {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-section {
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .portrait-frame {
+    max-height: 20rem;
+  }
+
+  .code-badge {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .education-card {
+    padding: 1.35rem 1rem;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .education-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    font-size: 1.15rem;
+  }
+
+  .contact-card-compact {
+    padding: 1.65rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .contact-pill-item {
+    padding: 0.9rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .pill-icon-wrapper {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .pill-value {
+    font-size: 0.88rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-outline {
+    width: 100%;
     text-align: center;
   }
 }
