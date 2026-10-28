@@ -10,5 +10,10 @@
   } catch (e) {
     // Graceful fallback if localStorage is disabled/restricted
   }
-})();
 
+  // Activate preloaded fonts non-render-blockingly (Strict CSP Compliant)
+  const fontSheet = document.getElementById('asyncGoogleFonts');
+  if (fontSheet) {
+    fontSheet.media = 'all';
+  }
+})();
