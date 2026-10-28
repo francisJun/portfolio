@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://francisjun.github.io/sitemap.xml
+Sitemap: https://francisjun.github.io/portfolio/sitemap.xml
 
