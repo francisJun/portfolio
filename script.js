@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MYDEV PORTFOLIO - SAMPAH FRANCIS
+   MYDEV PORTFOLIO - FRANCIS AMARTEY SAMPAH
    Client-Side Progressive Enhancement
    ========================================================================== */
 

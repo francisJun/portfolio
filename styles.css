@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MYDEV PORTFOLIO - SAMPAH FRANCIS
+   MYDEV PORTFOLIO - FRANCIS AMARTEY SAMPAH
    Raw CSS Design System with Native Light/Dark Mode & Responsive Architecture
    ========================================================================== */
 
@@ -212,15 +212,16 @@ img {
 
 .brand-logo {
   font-family: var(--font-headline);
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-size: clamp(0.88rem, 1.8vw, 1.15rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-primary);
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.35rem;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .brand-accent {
@@ -230,10 +231,10 @@ img {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(1rem, 1.8vw, 2rem);
   font-family: var(--font-headline);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .nav-link {
@@ -1355,10 +1356,8 @@ img {
   .section-number {
     display: none;
   }
-}
 
-/* Navbar Switch Breakpoint: 900px */
-@media (max-width: 900px) {
+  /* Navbar Switch Breakpoint: 1024px */
   .nav-links {
     display: none;
   }
@@ -1424,7 +1423,23 @@ img {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 0.85rem;
+  }
+
+  .brand-logo {
+    font-size: clamp(0.72rem, 3.6vw, 0.92rem);
+    letter-spacing: -0.03em;
+    gap: 0.2rem;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .theme-toggle-btn,
+  .mobile-menu-btn {
+    width: 2.35rem;
+    height: 2.35rem;
   }
 
   .hero-section {
