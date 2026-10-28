@@ -64,7 +64,7 @@
 
   --text-primary: #0f172a;
   --text-variant: #475569;
-  --text-muted: #94a3b8;
+  --text-muted: #64748b;
 
   --color-primary: #4f46e5;
   --color-primary-dim: #4338ca;
@@ -374,7 +374,8 @@ img {
   animation: drawerSlideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-.mobile-drawer.open {
+.mobile-drawer.open,
+.mobile-drawer:target {
   display: flex;
 }
 
@@ -1167,9 +1168,14 @@ img {
 /* --------------------------------------------------------------------------
    11. MODAL DIALOG (PROJECT DETAILS)
    -------------------------------------------------------------------------- */
-.modal-overlay {
+.modal-overlay,
+.project-modal {
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -1178,13 +1184,25 @@ img {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
+  border: none;
+  margin: 0;
+  box-sizing: border-box;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.modal-overlay.open {
+.modal-overlay.open,
+.project-modal.open,
+.project-modal:target,
+.project-modal[open] {
   display: flex;
   opacity: 1;
+}
+
+.project-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .modal-box {
@@ -1215,6 +1233,8 @@ img {
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s ease;
+  text-decoration: none;
+  font-size: 1.25rem;
 }
 
 .modal-close-btn:hover {
@@ -1246,6 +1266,29 @@ img {
   flex-direction: column;
   gap: 1.25rem;
   font-size: clamp(0.88rem, 1.5vw, 0.98rem);
+}
+
+.modal-subtitle {
+  font-family: var(--font-headline);
+  color: var(--text-primary);
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.modal-feature-list {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal-actions {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
 }
 
 /* --------------------------------------------------------------------------
@@ -1445,3 +1488,102 @@ img {
     text-align: center;
   }
 }
+
+/* --------------------------------------------------------------------------
+   14. ACCESSIBILITY & UTILITY CLASSES (REPLACING INLINE STYLES)
+   -------------------------------------------------------------------------- */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1.5rem;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  z-index: 9999;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1.5rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.icon-sm {
+  font-size: 1rem;
+}
+
+.icon-md {
+  font-size: 1.1rem;
+}
+
+.icon-lg {
+  font-size: 1.25rem;
+}
+
+.section-tag-center {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.resume-btn-wrapper {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-resume {
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  text-decoration: none;
+}
+
+.progress-95 { width: 95%; }
+.progress-92 { width: 92%; }
+.progress-98 { width: 98%; }
+.progress-90 { width: 90%; }
+.progress-88 { width: 88%; }
+.progress-94 { width: 94%; }
+.progress-85 { width: 85%; }
+.progress-80 { width: 80%; }
+
+.mobile-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-drawer-close {
+  background: var(--bg-surface-highest);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
