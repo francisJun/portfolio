@@ -1,1207 +1,1662 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Francis Amartey Sampah | AI-Powered Systems &amp; Full-Stack Software
+      Engineer
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Francis Amartey Sampah, Full-Stack Software Engineer &amp; Business Information Systems Specialist building AI-powered systems, scalable web &amp; mobile applications, enterprise ERPs, and LIMS."
+    />
+    <link rel="canonical" href="https://francisjun.github.io/portfolio/" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Francis Amartey Sampah | AI-Powered Systems &amp; Full-Stack Software Engineer</title>
-  <meta name="description"
-    content="Portfolio of Francis Amartey Sampah, a Full-Stack Software Engineer specializing in AI-powered systems, MERN Stack, TypeScript, Laravel, ERP platforms, LIMS, and workflow automation." />
-  <link rel="canonical" href="https://francisjun.github.io/portfolio/" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://francisjun.github.io/portfolio/" />
+    <meta
+      property="og:title"
+      content="Francis Amartey Sampah | AI-Powered Systems &amp; Full-Stack Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Full-Stack Software Engineer &amp; Business Information Systems Specialist building AI-powered systems, scalable web &amp; mobile applications, and enterprise solutions that create measurable value."
+    />
+    <meta
+      property="og:image"
+      content="https://francisjun.github.io/portfolio/assets/hero_portrait_1.jpeg"
+    />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://francisjun.github.io/portfolio/" />
-  <meta property="og:title" content="Francis Amartey Sampah | AI-Powered Systems &amp; Full-Stack Software Engineer" />
-  <meta property="og:description"
-    content="Transforming complex business requirements into scalable, reliable digital platforms. Specializing in AI-powered systems, MERN, TypeScript, Laravel, ERP, and LIMS." />
-  <meta property="og:image" content="https://francisjun.github.io/portfolio/assets/hero_portrait_1.jpeg" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://francisjun.github.io/portfolio/"
+    />
+    <meta
+      name="twitter:title"
+      content="Francis Amartey Sampah | AI-Powered Systems &amp; Full-Stack Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Full-Stack Software Engineer &amp; Business Information Systems Specialist building AI-powered systems, scalable web &amp; mobile applications, and enterprise solutions that create measurable value."
+    />
+    <meta
+      name="twitter:image"
+      content="https://francisjun.github.io/portfolio/assets/hero_portrait_1.jpeg"
+    />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://francisjun.github.io/portfolio/" />
-  <meta name="twitter:title" content="Francis Amartey Sampah | AI-Powered Systems &amp; Full-Stack Software Engineer" />
-  <meta name="twitter:description"
-    content="Transforming complex business requirements into scalable, reliable digital platforms. Specializing in AI-powered systems, MERN, TypeScript, Laravel, ERP, and LIMS." />
-  <meta name="twitter:image" content="https://francisjun.github.io/portfolio/assets/hero_portrait_1.jpeg" />
-
-  <!-- Content Security Policy (Strict: No unsafe-inline) -->
-  <meta http-equiv="Content-Security-Policy" content="
+    <!-- Content Security Policy (Strict: No unsafe-inline) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
     default-src 'self';
-    script-src 'self';
+    script-src 'self' https://cdn.credly.com;
     style-src 'self' https://fonts.googleapis.com;
     font-src https://fonts.gstatic.com;
-    img-src 'self' data: https://francisjun.github.io;
+    img-src 'self' data: https://images.credly.com https://francisjun.github.io;
+    frame-src 'self' https://www.credly.com;
     connect-src 'self';
     object-src 'none';
     base-uri 'self';
     form-action 'self';
-  " />
+  "
+    />
 
-  <!-- Fonts & Material Symbols (Preloaded, Non-Render-Blocking with Zero-JS Fallback) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
-  <link rel="stylesheet" id="asyncGoogleFonts"
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
-    media="print" />
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
-  </noscript>
+    <!-- Fonts & Material Symbols (Preloaded, Non-Render-Blocking with Zero-JS Fallback) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      id="asyncGoogleFonts"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+      media="print"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+      />
+    </noscript>
 
-  <!-- Custom Stylesheet (Preloaded for Instant FCP) -->
-  <link rel="preload" as="style" href="./styles.css" />
-  <link rel="stylesheet" href="./styles.css" />
+    <!-- Custom Stylesheet (Preloaded for Instant FCP) -->
+    <link rel="preload" as="style" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
-  <!-- External Zero-FOUC Theme Handler (Strict CSP Compliant) -->
-  <script src="./theme-init.js" defer></script>
+    <!-- External Zero-FOUC Theme Handler (Strict CSP Compliant) -->
+    <script src="./theme-init.js" defer></script>
 
-  <!-- Google AI Overview & Rich Search Structured Data (Schema.org JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+    <!-- Google AI Overview & Rich Search Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
       {
-        "@type": "Person",
-        "@id": "https://francisjun.github.io/portfolio/#person",
-        "name": "Francis Amartey Sampah",
-        "alternateName": "Sampah Francis",
-        "jobTitle": "Full-Stack Software Engineer & AI Systems Specialist",
-        "description": "Full-Stack Software Engineer specializing in AI-powered systems, Business Information Systems, MERN Stack, TypeScript, Laravel, ERP platforms, LIMS, and workflow automation.",
-        "url": "https://francisjun.github.io/portfolio/",
-        "image": "https://francisjun.github.io/portfolio/assets/hero_portrait_1.jpeg",
-        "email": "mailto:francissampah2@gmail.com",
-        "telephone": "+233542176913",
-        "sameAs": [
-          "https://github.com/francisjun",
-          "https://www.linkedin.com/in/sampah-francis/"
-        ],
-        "alumniOf": [
+        "@context": "https://schema.org",
+        "@graph": [
           {
-            "@type": "CollegeOrUniversity",
-            "name": "University for Development Studies"
+            "@type": "Person",
+            "@id": "https://francisjun.github.io/portfolio/#person",
+            "name": "Francis Amartey Sampah",
+            "alternateName": "Sampah Francis",
+            "jobTitle": "Full-Stack Software Engineer & AI Systems Specialist",
+            "description": "Full-Stack Software Engineer & Business Information Systems Specialist building AI-powered systems, scalable web and mobile applications, enterprise ERPs, and LIMS that simplify complex business processes.",
+            "url": "https://francisjun.github.io/portfolio/",
+            "image": "https://francisjun.github.io/portfolio/assets/hero_portrait_1.jpeg",
+            "email": "mailto:francissampah2@gmail.com",
+            "telephone": "+233542176913",
+            "sameAs": [
+              "https://github.com/francisjun",
+              "https://www.linkedin.com/in/sampah-francis/"
+            ],
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University for Development Studies"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Nusrat Jahan Ahmadiyya College of Education"
+              }
+            ],
+            "knowsAbout": [
+              "Artificial Intelligence Systems",
+              "Enterprise Resource Planning (ERP)",
+              "Laboratory Information Management Systems (LIMS)",
+              "MERN Stack (MongoDB, Express, React, Node.js)",
+              "TypeScript",
+              "Laravel & PHP",
+              "PostgreSQL & MySQL",
+              "RESTful APIs & Webhooks",
+              "Workflow Automation"
+            ]
           },
           {
-            "@type": "CollegeOrUniversity",
-            "name": "Nusrat Jahan Ahmadiyya College of Education"
-          }
-        ],
-        "knowsAbout": [
-          "Artificial Intelligence Systems",
-          "Enterprise Resource Planning (ERP)",
-          "Laboratory Information Management Systems (LIMS)",
-          "MERN Stack (MongoDB, Express, React, Node.js)",
-          "TypeScript",
-          "Laravel & PHP",
-          "PostgreSQL & MySQL",
-          "RESTful APIs & Webhooks",
-          "Workflow Automation"
-        ]
-      },
-      {
-        "@type": "ProfilePage",
-        "@id": "https://francisjun.github.io/portfolio/#webpage",
-        "url": "https://francisjun.github.io/portfolio/",
-        "name": "Francis Amartey Sampah | AI-Powered Systems & Full-Stack Software Engineer",
-        "mainEntity": {
-          "@id": "https://francisjun.github.io/portfolio/#person"
-        }
-      },
-      {
-        "@type": "ItemList",
-        "name": "Featured Software Engineering Projects",
-        "description": "Enterprise platforms, healthcare software, e-commerce, and workflow automation delivered by Francis Amartey Sampah.",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Enterprise Resource Planning (ERP) System",
-              "applicationCategory": "BusinessApplication",
-              "operatingSystem": "Web",
-              "description": "Designed and delivered an ERP platform that centralized business operations, improved visibility, and reduced manual workflows by 45% across 6 corporate departments.",
-              "creator": { "@id": "https://francisjun.github.io/portfolio/#person" },
-              "url": "https://github.com/francisjun"
+            "@type": "ProfilePage",
+            "@id": "https://francisjun.github.io/portfolio/#webpage",
+            "url": "https://francisjun.github.io/portfolio/",
+            "name": "Francis Amartey Sampah | AI-Powered Systems & Full-Stack Software Engineer",
+            "mainEntity": {
+              "@id": "https://francisjun.github.io/portfolio/#person"
             }
           },
           {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Laboratory Information Management System (LIMS)",
-              "applicationCategory": "HealthApplication",
-              "operatingSystem": "Web",
-              "description": "Digitized laboratory tracking workflows, improved data integrity, and reduced sample processing time by 60% across 3 active laboratories.",
-              "creator": { "@id": "https://francisjun.github.io/portfolio/#person" },
-              "url": "https://github.com/francisjun"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Medkart – Online Generic Medicine Store",
-              "applicationCategory": "ShoppingApplication",
-              "operatingSystem": "Web",
-              "description": "E-commerce platform serving thousands of daily customers with interactive pharmacy store locators and high-scale product search.",
-              "url": "https://www.medkart.in/"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Unific – E-Commerce & Marketing Data Sync",
-              "applicationCategory": "BusinessApplication",
-              "operatingSystem": "Cloud",
-              "description": "Bi-directional data synchronization pipeline integrating major e-commerce and marketing APIs for over 200 businesses.",
-              "url": "https://www.unific.com/"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Hotel Booking Management System",
-              "applicationCategory": "HospitalityApplication",
-              "operatingSystem": "Web",
-              "description": "Complete reservation and reporting platform boosting operational efficiency by 80% and supporting 400+ daily customers.",
-              "creator": { "@id": "https://francisjun.github.io/portfolio/#person" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Ride-Hailing Platform",
-              "applicationCategory": "TravelApplication",
-              "operatingSystem": "Mobile / Web",
-              "description": "Real-time dispatch, location tracking, and administrative modules supporting approximately 1,000 drivers.",
-              "creator": { "@id": "https://francisjun.github.io/portfolio/#person" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "InvClick – Spatial & Statistical Platform",
-              "applicationCategory": "BusinessApplication",
-              "operatingSystem": "Web",
-              "description": "Custom spatial and statistical consulting platform reducing administrative workflow effort by 30% for 250+ users.",
-              "creator": { "@id": "https://francisjun.github.io/portfolio/#person" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 8,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Ghana Sweden Chamber of Commerce",
-              "applicationCategory": "BusinessApplication",
-              "operatingSystem": "Web",
-              "description": "High-performance responsive platform strengthening engagement between institutions in Ghana and Sweden, boosting visibility by 85%.",
-              "url": "https://ghanaswedenchamber.com/"
-            }
+            "@type": "ItemList",
+            "name": "Featured Software Engineering Projects",
+            "description": "Enterprise platforms, healthcare software, e-commerce, and workflow automation delivered by Francis Amartey Sampah.",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "Enterprise Resource Planning (ERP) System",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "description": "Designed and delivered an ERP platform that centralized business operations, improved visibility, and reduced manual workflows by 45% across 6 corporate departments.",
+                  "creator": {
+                    "@id": "https://francisjun.github.io/portfolio/#person"
+                  },
+                  "url": "https://github.com/francisjun"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "Laboratory Information Management System (LIMS)",
+                  "applicationCategory": "HealthApplication",
+                  "operatingSystem": "Web",
+                  "description": "Digitized laboratory tracking workflows, improved data integrity, and reduced sample processing time by 60% across 3 active laboratories.",
+                  "creator": {
+                    "@id": "https://francisjun.github.io/portfolio/#person"
+                  },
+                  "url": "https://github.com/francisjun"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "Medkart – Online Generic Medicine Store",
+                  "applicationCategory": "ShoppingApplication",
+                  "operatingSystem": "Web",
+                  "description": "E-commerce platform serving thousands of daily customers with interactive pharmacy store locators and high-scale product search.",
+                  "url": "https://www.medkart.in/"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "Unific – E-Commerce & Marketing Data Sync",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Cloud",
+                  "description": "Bi-directional data synchronization pipeline integrating major e-commerce and marketing APIs for over 200 businesses.",
+                  "url": "https://www.unific.com/"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "Hotel Booking Management System",
+                  "applicationCategory": "HospitalityApplication",
+                  "operatingSystem": "Web",
+                  "description": "Complete reservation and reporting platform boosting operational efficiency by 80% and supporting 400+ daily customers.",
+                  "creator": {
+                    "@id": "https://francisjun.github.io/portfolio/#person"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "Ride-Hailing Platform",
+                  "applicationCategory": "TravelApplication",
+                  "operatingSystem": "Mobile / Web",
+                  "description": "Real-time dispatch, location tracking, and administrative modules supporting approximately 1,000 drivers.",
+                  "creator": {
+                    "@id": "https://francisjun.github.io/portfolio/#person"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "InvClick – Spatial & Statistical Platform",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "description": "Custom spatial and statistical consulting platform reducing administrative workflow effort by 30% for 250+ users.",
+                  "creator": {
+                    "@id": "https://francisjun.github.io/portfolio/#person"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "Ghana Sweden Chamber of Commerce",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "description": "High-performance responsive platform strengthening engagement between institutions in Ghana and Sweden, boosting visibility by 85%.",
+                  "url": "https://ghanaswedenchamber.com/"
+                }
+              }
+            ]
           }
         ]
       }
-    ]
-  }
-  </script>
-</head>
+    </script>
+  </head>
 
-<body>
-  <!-- Skip Navigation Link (WCAG 2.2 AA SC 2.4.1) -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <body>
+    <!-- Skip Navigation Link (WCAG 2.2 AA SC 2.4.1) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- =========================================================================
+    <!-- =========================================================================
        NAVIGATION BAR
        ========================================================================= -->
-  <header class="navbar">
-    <div class="container">
-      <a href="#" class="brand-logo">
-        FRANCIS <span class="brand-accent">AMARTEY</span> SAMPAH
-      </a>
-
-      <!-- Desktop Navigation Links -->
-      <nav class="nav-links" aria-label="Main Navigation">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-
-      <!-- Action Buttons -->
-      <div class="nav-actions">
-        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Light and Dark Mode"
-          title="Toggle Theme">
-          <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
-        </button>
-
-        <a href="#contact" class="btn-primary desktop-only">
-          <span>Get in Touch</span>
-          <span class="material-symbols-outlined icon-md">mail</span>
+    <header class="navbar">
+      <div class="container">
+        <a href="#" class="brand-logo">
+          FRANCIS <span class="brand-accent">AMARTEY</span> SAMPAH
         </a>
 
-        <!-- Mobile Menu Trigger Anchor (Zero-JS Target + Progressive Button) -->
-        <a href="#mobileDrawer" id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open Navigation Menu">
-          <span class="material-symbols-outlined">menu</span>
-        </a>
-      </div>
-    </div>
-  </header>
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#certifications" class="nav-link">Badges</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
 
-  <!-- Mobile Drawer Navigation (Zero-JS CSS :target + Progressive Enhancement) -->
-  <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-label="Mobile Navigation Menu">
-    <div class="mobile-drawer-header">
-      <span class="brand-accent">NAVIGATION</span>
-      <a href="#" class="mobile-drawer-close" aria-label="Close Navigation Menu">&times;</a>
-    </div>
-    <a href="#about" class="mobile-nav-link">About</a>
-    <a href="#projects" class="mobile-nav-link">Projects</a>
-    <a href="#skills" class="mobile-nav-link">Skills</a>
-    <a href="#experience" class="mobile-nav-link">Experience</a>
-    <a href="#education" class="mobile-nav-link">Education</a>
-    <a href="#contact" class="mobile-nav-link">Contact</a>
-  </div>
+        <!-- Action Buttons -->
+        <div class="nav-actions">
+          <button
+            id="themeToggleBtn"
+            class="theme-toggle-btn"
+            aria-label="Toggle Light and Dark Mode"
+            title="Toggle Theme"
+          >
+            <span class="material-symbols-outlined" id="themeIcon"
+              >dark_mode</span
+            >
+          </button>
 
-  <!-- =========================================================================
-       MAIN CONTENT CONTAINER
-       ========================================================================= -->
-  <main id="main-content">
+          <a href="#contact" class="btn-primary desktop-only">
+            <span>Get in Touch</span>
+            <span class="material-symbols-outlined icon-md">mail</span>
+          </a>
 
-    <!-- =========================================================================
-         HERO SECTION
-         ========================================================================= -->
-    <section class="hero-section" id="hero">
-      <div class="hero-glow-bg"></div>
-      <div class="container">
-        <div class="hero-grid">
-          <!-- Hero Text Content -->
-          <div class="hero-content">
-            <h1 class="hero-title">
-              Building <span class="text-primary">Scalable Web &amp; Mobile</span> Digital Platforms
-            </h1>
-
-            <p class="hero-subtitle">
-              As a Full-Stack Software Engineer specializing in AI-powered systems, Business Information Systems, MERN
-              Stack, TypeScript, Laravel, ERP solutions, LIMS, and workflow automation, I transform complex business
-              requirements into intuitive, reliable digital products.
-            </p>
-
-            <div class="hero-cta-group">
-              <a href="#projects" class="btn-primary">
-                View Selected Works
-                <span class="material-symbols-outlined">arrow_outward</span>
-              </a>
-              <a href="#contact" class="btn-outline">
-                Contact Me
-              </a>
-            </div>
-          </div>
-
-          <!-- Hero Portrait Visual (CLS = 0 with Reserved Dimensions & High Priority) -->
-          <div class="hero-portrait-card">
-            <div class="portrait-frame">
-              <img src="./assets/hero_portrait_1.jpeg" alt="Francis Amartey Sampah Portrait" class="portrait-img"
-                width="420" height="560" fetchpriority="high" decoding="async" />
-              <div class="portrait-overlay"></div>
-            </div>
-            <div class="code-badge">
-              <div class="code-badge-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <code class="code-badge-text">const engineer = new SoftwareEngineer('Francis');</code>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         ABOUT SECTION
-         ========================================================================= -->
-    <section class="about-section" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div>
-            <h2 class="section-tag">The Story</h2>
-            <div class="story-text">
-              <p>
-                My journey didn't start with a keyboard, but with a chalkboard. Transitioning from education to software
-                engineering has uniquely shaped my perspective on user experience, clarity, and system architecture.
-              </p>
-              <p>
-                I believe code should be as clear as a well-crafted lesson and as robust as an architectural blueprint.
-                Today, I architect full-stack digital solutions designed to handle complex business requirements cleanly.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div class="value-cards-grid">
-              <div class="value-card">
-                <span class="material-symbols-outlined value-icon text-primary">layers</span>
-                <span class="value-label">Tech Stack</span>
-                <span class="value-title">MERN &amp; LAMP</span>
-              </div>
-              <div class="value-card">
-                <span class="material-symbols-outlined value-icon text-secondary">database</span>
-                <span class="value-label">Specialization</span>
-                <span class="value-title">Business Systems</span>
-              </div>
-              <div class="value-card">
-                <span class="material-symbols-outlined value-icon text-tertiary">smartphone</span>
-                <span class="value-label">Platforms</span>
-                <span class="value-title">Web &amp; Mobile</span>
-              </div>
-            </div>
-
-            <div class="tech-pills">
-              <span class="tech-pill">JavaScript</span>
-              <span class="tech-pill">TypeScript</span>
-              <span class="tech-pill">React</span>
-              <span class="tech-pill">Node.js</span>
-              <span class="tech-pill">Express</span>
-              <span class="tech-pill">Laravel</span>
-              <span class="tech-pill">MERN Stack</span>
-              <span class="tech-pill">LAMP Stack</span>
-              <span class="tech-pill">MySQL</span>
-              <span class="tech-pill">PostgreSQL</span>
-              <span class="tech-pill">REST APIs</span>
-              <span class="tech-pill">Cloud Storage</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SELECTED WORKS SECTION (STATIC HTML IN DOM FOR AI SEARCH & ZERO-JS)
-         ========================================================================= -->
-    <section class="projects-section" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-header-content">
-            <p class="section-eyebrow"><span class="eyebrow-slash" aria-hidden="true">/ </span>Selected Works</p>
-            <h2 class="section-header-title" id="projects-title">What I <span class="brand-accent">build &amp; scale</span></h2>
-            <p class="section-header-desc">Key client engagements engineered for operational efficiency, scalability,
-              and measurable business impact.</p>
-          </div>
-          <div class="section-number" aria-hidden="true">01–08</div>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Project Card 1: ERP System -->
-          <article class="project-card">
-            <div class="project-card-header">
-              <p class="project-eyebrow">Enterprise Systems</p>
-              <span class="project-index" aria-hidden="true">01</span>
-            </div>
-            <h3 class="project-title">01. Enterprise Resource Planning (ERP) System</h3>
-            <p class="project-desc">Centralized business operations, improved cross-departmental process visibility, and reduced manual workflows by 45% across 6 corporate units.</p>
-            <ul class="tag-list" aria-label="Technologies used in Enterprise Resource Planning System">
-              <li class="tag-item">Laravel</li>
-              <li class="tag-item">MySQL</li>
-              <li class="tag-item">ERP Architecture</li>
-              <li class="tag-item">Role-Based Access</li>
-            </ul>
-            <div class="project-card-footer">
-              <a href="#project-modal-0" class="btn-link open-modal-link">
-                View Architecture &amp; Impact
-                <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project Card 2: LIMS -->
-          <article class="project-card">
-            <div class="project-card-header">
-              <p class="project-eyebrow">Healthcare &amp; Diagnostics</p>
-              <span class="project-index" aria-hidden="true">02</span>
-            </div>
-            <h3 class="project-title">02. Laboratory Information Management System (LIMS)</h3>
-            <p class="project-desc">Digitized laboratory workflows and sample tracking, reducing clinical test processing turnaround time by 60% across 3 active diagnostic labs.</p>
-            <ul class="tag-list" aria-label="Technologies used in Laboratory Information Management System">
-              <li class="tag-item">TypeScript</li>
-              <li class="tag-item">Node.js</li>
-              <li class="tag-item">LIMS</li>
-              <li class="tag-item">Clinical Workflows</li>
-              <li class="tag-item">Data Integrity</li>
-            </ul>
-            <div class="project-card-footer">
-              <a href="#project-modal-1" class="btn-link open-modal-link">
-                View Architecture &amp; Impact
-                <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project Card 3: Medkart -->
-          <article class="project-card">
-            <div class="project-card-header">
-              <p class="project-eyebrow">E-Commerce &amp; Retail</p>
-              <span class="project-index" aria-hidden="true">03</span>
-            </div>
-            <h3 class="project-title">03. Medkart – Online Generic Medicine Store</h3>
-            <p class="project-desc">Contributed to India's leading online generic medicine platform serving thousands of daily users, implementing customer store locator features and mobile accessibility.</p>
-            <ul class="tag-list" aria-label="Technologies used in Medkart">
-              <li class="tag-item">React</li>
-              <li class="tag-item">Node.js</li>
-              <li class="tag-item">Maps API</li>
-              <li class="tag-item">WCAG Accessibility</li>
-              <li class="tag-item">State Management</li>
-            </ul>
-            <div class="project-card-footer">
-              <a href="#project-modal-2" class="btn-link open-modal-link">
-                View Architecture &amp; Impact
-                <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project Card 4: Unific -->
-          <article class="project-card">
-            <div class="project-card-header">
-              <p class="project-eyebrow">Data Integration &amp; Pipelines</p>
-              <span class="project-index" aria-hidden="true">04</span>
-            </div>
-            <h3 class="project-title">04. Unific – E-Commerce &amp; Marketing Data Sync</h3>
-            <p class="project-desc">Platform synchronizing operational and customer data between e-commerce engines and marketing automation tools for over 200 integrated businesses.</p>
-            <ul class="tag-list" aria-label="Technologies used in Unific Data Sync">
-              <li class="tag-item">Node.js</li>
-              <li class="tag-item">TypeScript</li>
-              <li class="tag-item">REST APIs</li>
-              <li class="tag-item">Event Sync</li>
-              <li class="tag-item">Webhooks</li>
-            </ul>
-            <div class="project-card-footer">
-              <a href="#project-modal-3" class="btn-link open-modal-link">
-                View Architecture &amp; Impact
-                <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project Card 5: Hotel Booking System -->
-          <article class="project-card">
-            <div class="project-card-header">
-              <p class="project-eyebrow">Hospitality &amp; Booking</p>
-              <span class="project-index" aria-hidden="true">05</span>
-            </div>
-            <h3 class="project-title">05. Hotel Booking Management System</h3>
-            <p class="project-desc">Independently delivered an end-to-end reservation and reporting platform, boosting operational efficiency by 80% and supporting 400+ daily customers.</p>
-            <ul class="tag-list" aria-label="Technologies used in Hotel Booking Management System">
-              <li class="tag-item">Laravel</li>
-              <li class="tag-item">MySQL</li>
-              <li class="tag-item">Reservation Engine</li>
-              <li class="tag-item">Payment Gateways</li>
-              <li class="tag-item">Automated Reporting</li>
-            </ul>
-            <div class="project-card-footer">
-              <a href="#project-modal-4" class="btn-link open-modal-link">
-                View Architecture &amp; Impact
-                <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project Card 6: Ride-Hailing Platform -->
-          <article class="project-card">
-            <div class="project-card-header">
-              <p class="project-eyebrow">Mobility &amp; Real-Time Logistics</p>
-              <span class="project-index" aria-hidden="true">06</span>
-            </div>
-            <h3 class="project-title">06. Ride-Hailing Platform</h3>
-            <p class="project-desc">Led development of core customer, driver, and admin dispatch features with real-time geospatial updates, improving platform stability for ~1,000 drivers.</p>
-            <ul class="tag-list" aria-label="Technologies used in Ride-Hailing Platform">
-              <li class="tag-item">Mobile Apps</li>
-              <li class="tag-item">Node.js</li>
-              <li class="tag-item">WebSockets</li>
-              <li class="tag-item">Geolocation</li>
-              <li class="tag-item">Fleet Dispatch</li>
-            </ul>
-            <div class="project-card-footer">
-              <a href="#project-modal-5" class="btn-link open-modal-link">
-                View Architecture &amp; Impact
-                <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project Card 7: InvClick -->
-          <article class="project-card">
-            <div class="project-card-header">
-              <p class="project-eyebrow">Spatial Analytics &amp; GIS</p>
-              <span class="project-index" aria-hidden="true">07</span>
-            </div>
-            <h3 class="project-title">07. InvClick – Spatial &amp; Statistical Platform</h3>
-            <p class="project-desc">Custom business platform replacing manual workflows for a spatial and statistical consultancy, reducing administrative effort by 30% for 250+ users.</p>
-            <ul class="tag-list" aria-label="Technologies used in InvClick">
-              <li class="tag-item">WordPress</li>
-              <li class="tag-item">PHP</li>
-              <li class="tag-item">Custom Plugins</li>
-              <li class="tag-item">Spatial Analysis</li>
-              <li class="tag-item">Statistical Tools</li>
-            </ul>
-            <div class="project-card-footer">
-              <a href="#project-modal-6" class="btn-link open-modal-link">
-                View Architecture &amp; Impact
-                <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project Card 8: Ghana Sweden Chamber -->
-          <article class="project-card">
-            <div class="project-card-header">
-              <p class="project-eyebrow">Corporate &amp; Bilateral Relations</p>
-              <span class="project-index" aria-hidden="true">08</span>
-            </div>
-            <h3 class="project-title">08. Ghana Sweden Chamber of Commerce</h3>
-            <p class="project-desc">Designed &amp; developed a responsive platform strengthening engagement between institutions in Ghana and Sweden, boosting online visibility by 85%.</p>
-            <ul class="tag-list" aria-label="Technologies used in Ghana Sweden Chamber of Commerce">
-              <li class="tag-item">Web Design</li>
-              <li class="tag-item">Responsive UI</li>
-              <li class="tag-item">Custom Themes</li>
-              <li class="tag-item">Bilateral Portal</li>
-              <li class="tag-item">SEO Architecture</li>
-            </ul>
-            <div class="project-card-footer">
-              <a href="#project-modal-7" class="btn-link open-modal-link">
-                View Architecture &amp; Impact
-                <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SKILLS & TOOLKIT SECTION
-         ========================================================================= -->
-    <section class="skills-section" id="skills">
-      <div class="container">
-        <h2 class="section-tag section-tag-center">
-          Toolkit &amp; Core Competencies
-        </h2>
-
-        <div class="skills-grid">
-          <!-- Card 1: Full-Stack -->
-          <div class="skill-card">
-            <div class="skill-header">
-              <div class="skill-icon-badge skill-icon-primary">
-                <span class="material-symbols-outlined">code</span>
-              </div>
-              <h3 class="skill-title">Full-Stack &amp; MERN</h3>
-            </div>
-            <div class="skill-list">
-              <div>
-                <div class="skill-meta">
-                  <span>JavaScript &amp; TypeScript</span>
-                  <span>95%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-primary progress-95"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="skill-meta">
-                  <span>React &amp; Node.js (MERN)</span>
-                  <span>92%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-primary progress-92"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="skill-meta">
-                  <span>Tailwind &amp; UI Architecture</span>
-                  <span>98%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-primary progress-98"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2: Backend & Enterprise -->
-          <div class="skill-card">
-            <div class="skill-header">
-              <div class="skill-icon-badge skill-icon-secondary">
-                <span class="material-symbols-outlined">dns</span>
-              </div>
-              <h3 class="skill-title">Backend &amp; LAMP</h3>
-            </div>
-            <div class="skill-list">
-              <div>
-                <div class="skill-meta">
-                  <span>Laravel / PHP (LAMP)</span>
-                  <span>90%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-secondary progress-90"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="skill-meta">
-                  <span>MySQL &amp; PostgreSQL</span>
-                  <span>88%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-secondary progress-88"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="skill-meta">
-                  <span>REST APIs &amp; Webhooks</span>
-                  <span>94%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-secondary progress-94"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Systems & Management -->
-          <div class="skill-card">
-            <div class="skill-header">
-              <div class="skill-icon-badge skill-icon-tertiary">
-                <span class="material-symbols-outlined">hub</span>
-              </div>
-              <h3 class="skill-title">Systems &amp; Leadership</h3>
-            </div>
-            <div class="skill-list">
-              <div>
-                <div class="skill-meta">
-                  <span>Software Infrastructure</span>
-                  <span>85%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-tertiary progress-85"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="skill-meta">
-                  <span>Mobile Applications</span>
-                  <span>80%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-tertiary progress-80"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="skill-meta">
-                  <span>Client &amp; Stakeholder Relations</span>
-                  <span>95%</span>
-                </div>
-                <div class="progress-track">
-                  <div class="progress-fill fill-tertiary progress-95"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         EXPERIENCE / JOURNEY SECTION
-         ========================================================================= -->
-    <section class="experience-section" id="experience">
-      <div class="container">
-        <h2 class="section-tag">Professional Experience</h2>
-
-        <div class="timeline">
-          <!-- Role 1 -->
-          <article class="timeline-item">
-            <div class="timeline-node active"></div>
-            <time class="timeline-date" datetime="2025-07">July 2025 – Present</time>
-            <h3 class="timeline-role">Independent Software Engineer / Software Consultant</h3>
-            <div class="timeline-company">Amartey Smarttech Innovations | Accra, Ghana</div>
-          </article>
-
-          <!-- Role 2 -->
-          <article class="timeline-item">
-            <div class="timeline-node"></div>
-            <time class="timeline-date" datetime="2022-08/2025-07">August 2022 – July 2025 (3 Years)</time>
-            <h3 class="timeline-role">Full Stack Software Engineer</h3>
-            <div class="timeline-company">Afro TechLabs | Tamale, Ghana</div>
-          </article>
-
-          <!-- Role 3 -->
-          <article class="timeline-item">
-            <div class="timeline-node"></div>
-            <time class="timeline-date" datetime="2022-08/2025-06">August 2022 – June 2025 (2 Years 11 Months)</time>
-            <h3 class="timeline-role">Senior Software Engineer</h3>
-            <div class="timeline-company">Invennico Techno Labs | Gujarat, India (Remote)</div>
-          </article>
-
-          <!-- Role 4 -->
-          <article class="timeline-item">
-            <div class="timeline-node"></div>
-            <time class="timeline-date" datetime="2021-12/2023-01">December 2021 – January 2023 (1 Year 2 Months)</time>
-            <h3 class="timeline-role">Lead Software Engineer &amp; Co-Founder</h3>
-            <div class="timeline-company">Wecari | Accra, Ghana</div>
-          </article>
-
-          <!-- Role 5 -->
-          <article class="timeline-item">
-            <div class="timeline-node"></div>
-            <time class="timeline-date" datetime="2021-02/2022-08">February 2021 – August 2022 (1 Year 7 Months)</time>
-            <h3 class="timeline-role">Full-Stack Software Engineer</h3>
-            <div class="timeline-company">Start Link Africa | Accra, Ghana</div>
-          </article>
-
-          <!-- Role 6 -->
-          <article class="timeline-item">
-            <div class="timeline-node"></div>
-            <time class="timeline-date" datetime="2021-01/2022-08">January 2021 – August 2022 (1 Year 8 Months)</time>
-            <h3 class="timeline-role">Classroom Teacher</h3>
-            <div class="timeline-company">Ghana Education Service | Wa, Upper West Region, Ghana</div>
-          </article>
-
-          <!-- Role 7 -->
-          <article class="timeline-item">
-            <div class="timeline-node"></div>
-            <time class="timeline-date" datetime="2018-11/2020-12">November 2018 – December 2020 (2 Years 2 Months)</time>
-            <h3 class="timeline-role">Junior Software Engineer &amp; Web Systems Administrator</h3>
-            <div class="timeline-company">Facio Innovations Technology | Wa, Ghana</div>
-          </article>
-        </div>
-
-        <!-- Download Resume Action Button -->
-        <div class="resume-btn-wrapper">
-          <a href="./assets/FRANCIS_AMARTEY_SAMPAH_Resume.pdf" download="FRANCIS_AMARTEY_SAMPAH_Resume.pdf"
-            target="_blank" rel="noopener noreferrer" class="btn-primary btn-resume">
-            <span>Download Full Resume (PDF)</span>
-            <span class="material-symbols-outlined icon-lg">download</span>
+          <!-- Mobile Menu Trigger Anchor (Zero-JS Target + Progressive Button) -->
+          <a
+            href="#mobileDrawer"
+            id="mobileMenuBtn"
+            class="mobile-menu-btn"
+            aria-label="Open Navigation Menu"
+          >
+            <span class="material-symbols-outlined">menu</span>
           </a>
         </div>
       </div>
-    </section>
+    </header>
+
+    <!-- Mobile Drawer Navigation (Zero-JS CSS :target + Progressive Enhancement) -->
+    <div
+      id="mobileDrawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-label="Mobile Navigation Menu"
+    >
+      <div class="mobile-drawer-header">
+        <span class="brand-accent">NAVIGATION</span>
+        <a
+          href="#"
+          class="mobile-drawer-close"
+          aria-label="Close Navigation Menu"
+          >&times;</a
+        >
+      </div>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#certifications" class="mobile-nav-link">Badges</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#education" class="mobile-nav-link">Education</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
 
     <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+    <main id="main-content">
+      <!-- =========================================================================
+         HERO SECTION
+         ========================================================================= -->
+      <section class="hero-section" id="hero">
+        <div class="hero-glow-bg"></div>
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Hero Text Content -->
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Building
+                <span class="text-primary">Scalable Web &amp; Mobile</span>
+                Digital Platforms
+              </h1>
+
+              <p class="hero-subtitle">
+                Full-Stack Software Engineer &amp; Business Information Systems
+                Specialist architecting AI-powered systems, custom enterprise
+                platforms, and scalable web and mobile applications. I translate
+                complex business requirements into intuitive, reliable digital
+                products that create measurable value.
+              </p>
+
+              <div class="hero-cta-group">
+                <a href="#projects" class="btn-primary">
+                  View Selected Works
+                  <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+                <a href="#contact" class="btn-outline"> Contact Me </a>
+              </div>
+            </div>
+
+            <!-- Hero Portrait Visual (CLS = 0 with Reserved Dimensions & High Priority) -->
+            <div class="hero-portrait-card">
+              <div class="portrait-frame">
+                <img
+                  src="./assets/hero_portrait_1.jpeg"
+                  alt="Francis Amartey Sampah Portrait"
+                  class="portrait-img"
+                  width="420"
+                  height="560"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+                <div class="portrait-overlay"></div>
+              </div>
+              <div class="code-badge">
+                <div class="code-badge-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <code class="code-badge-text"
+                  >const engineer = new SoftwareEngineer('Francis');</code
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         ABOUT SECTION
+         ========================================================================= -->
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="about-top-header">
+            <p class="section-eyebrow">
+              <span class="eyebrow-slash" aria-hidden="true">/ </span>Background
+            </p>
+            <h2 class="section-header-title" id="about-title">
+              The <span class="brand-accent">Story</span>
+            </h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="story-content-col">
+              <p class="story-desc">
+                From pedagogical clarity in the classroom to scalable full-stack
+                system architecture.
+              </p>
+
+              <div class="story-content">
+                <p class="story-lead">
+                  My path into software engineering began in front of a
+                  chalkboard. Transitioning from education to systems
+                  engineering instilled an enduring focus on clarity, mental
+                  models, and intuitive user experiences. I believe code should
+                  be as readable as a well-delivered lesson and as resilient as
+                  a structural blueprint.
+                </p>
+                <p>
+                  Over the years, I have partnered with startups, established
+                  organizations, and independent clients to architect scalable
+                  web and mobile applications. From enterprise ERP solutions and
+                  clinical LIMS to real-time sync pipelines across MERN and LAMP
+                  stacks, I focus on simplifying complex operations, continually
+                  exploring AI to build smarter, high-impact systems.
+                </p>
+              </div>
+            </div>
+
+            <div class="story-sidebar">
+              <h3 class="principles-heading">Core Engineering Principles</h3>
+              <ul
+                class="principles-list"
+                aria-label="Core Engineering Principles"
+              >
+                <li class="principle-item">
+                  <span class="principle-number" aria-hidden="true">01</span>
+                  <div>
+                    <h4 class="principle-title">Pedagogical Clarity</h4>
+                    <p class="principle-desc">
+                      Code written for humans first. Self-documenting domain
+                      models, intentional state, and clean interfaces.
+                    </p>
+                  </div>
+                </li>
+                <li class="principle-item">
+                  <span class="principle-number" aria-hidden="true">02</span>
+                  <div>
+                    <h4 class="principle-title">Defensive Architecture</h4>
+                    <p class="principle-desc">
+                      Make invalid states unrepresentable. Strong typing,
+                      relational schema constraints, and audit trails.
+                    </p>
+                  </div>
+                </li>
+                <li class="principle-item">
+                  <span class="principle-number" aria-hidden="true">03</span>
+                  <div>
+                    <h4 class="principle-title">Measurable Impact</h4>
+                    <p class="principle-desc">
+                      Software as an operational multiplier that verifiably cuts
+                      manual drag and protects revenue.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         SELECTED WORKS SECTION (STATIC HTML IN DOM FOR AI SEARCH & ZERO-JS)
+         ========================================================================= -->
+      <section
+        class="projects-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <div class="section-header-content">
+              <p class="section-eyebrow">
+                <span class="eyebrow-slash" aria-hidden="true">/ </span>Selected
+                Works
+              </p>
+              <h2 class="section-header-title" id="projects-title">
+                What I <span class="brand-accent">build &amp; scale</span>
+              </h2>
+              <p class="section-header-desc">
+                Key client engagements engineered for operational efficiency,
+                scalability, and measurable business impact.
+              </p>
+            </div>
+            <div class="section-number" aria-hidden="true">01–08</div>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project Card 1: ERP System -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <p class="project-eyebrow">Enterprise Systems</p>
+                <span class="project-index" aria-hidden="true">01</span>
+              </div>
+              <h3 class="project-title">
+                01. Enterprise Resource Planning (ERP) System
+              </h3>
+              <p class="project-desc">
+                Centralized business operations, improved cross-departmental
+                process visibility, and reduced manual workflows by 45% across 6
+                corporate units.
+              </p>
+              <ul
+                class="tag-list"
+                aria-label="Technologies used in Enterprise Resource Planning System"
+              >
+                <li class="tag-item">Laravel</li>
+                <li class="tag-item">MySQL</li>
+                <li class="tag-item">ERP Architecture</li>
+                <li class="tag-item">Role-Based Access</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="#project-modal-0" class="btn-link open-modal-link">
+                  View Architecture &amp; Impact
+                  <span
+                    class="material-symbols-outlined icon-sm"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card 2: LIMS -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <p class="project-eyebrow">Healthcare &amp; Diagnostics</p>
+                <span class="project-index" aria-hidden="true">02</span>
+              </div>
+              <h3 class="project-title">
+                02. Laboratory Information Management System (LIMS)
+              </h3>
+              <p class="project-desc">
+                Digitized laboratory workflows and sample tracking, reducing
+                clinical test processing turnaround time by 60% across 3 active
+                diagnostic labs.
+              </p>
+              <ul
+                class="tag-list"
+                aria-label="Technologies used in Laboratory Information Management System"
+              >
+                <li class="tag-item">TypeScript</li>
+                <li class="tag-item">Node.js</li>
+                <li class="tag-item">LIMS</li>
+                <li class="tag-item">Clinical Workflows</li>
+                <li class="tag-item">Data Integrity</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="#project-modal-1" class="btn-link open-modal-link">
+                  View Architecture &amp; Impact
+                  <span
+                    class="material-symbols-outlined icon-sm"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card 3: Medkart -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <p class="project-eyebrow">E-Commerce &amp; Retail</p>
+                <span class="project-index" aria-hidden="true">03</span>
+              </div>
+              <h3 class="project-title">
+                03. Medkart – Online Generic Medicine Store
+              </h3>
+              <p class="project-desc">
+                Contributed to India's leading online generic medicine platform
+                serving thousands of daily users, implementing customer store
+                locator features and mobile accessibility.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used in Medkart">
+                <li class="tag-item">React</li>
+                <li class="tag-item">Node.js</li>
+                <li class="tag-item">Maps API</li>
+                <li class="tag-item">WCAG Accessibility</li>
+                <li class="tag-item">State Management</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="#project-modal-2" class="btn-link open-modal-link">
+                  View Architecture &amp; Impact
+                  <span
+                    class="material-symbols-outlined icon-sm"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card 4: Unific -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <p class="project-eyebrow">Data Integration &amp; Pipelines</p>
+                <span class="project-index" aria-hidden="true">04</span>
+              </div>
+              <h3 class="project-title">
+                04. Unific – E-Commerce &amp; Marketing Data Sync
+              </h3>
+              <p class="project-desc">
+                Platform synchronizing operational and customer data between
+                e-commerce engines and marketing automation tools for over 200
+                integrated businesses.
+              </p>
+              <ul
+                class="tag-list"
+                aria-label="Technologies used in Unific Data Sync"
+              >
+                <li class="tag-item">Node.js</li>
+                <li class="tag-item">TypeScript</li>
+                <li class="tag-item">REST APIs</li>
+                <li class="tag-item">Event Sync</li>
+                <li class="tag-item">Webhooks</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="#project-modal-3" class="btn-link open-modal-link">
+                  View Architecture &amp; Impact
+                  <span
+                    class="material-symbols-outlined icon-sm"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card 5: Hotel Booking System -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <p class="project-eyebrow">Hospitality &amp; Booking</p>
+                <span class="project-index" aria-hidden="true">05</span>
+              </div>
+              <h3 class="project-title">05. Hotel Booking Management System</h3>
+              <p class="project-desc">
+                Independently delivered an end-to-end reservation and reporting
+                platform, boosting operational efficiency by 80% and supporting
+                400+ daily customers.
+              </p>
+              <ul
+                class="tag-list"
+                aria-label="Technologies used in Hotel Booking Management System"
+              >
+                <li class="tag-item">Laravel</li>
+                <li class="tag-item">MySQL</li>
+                <li class="tag-item">Reservation Engine</li>
+                <li class="tag-item">Payment Gateways</li>
+                <li class="tag-item">Automated Reporting</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="#project-modal-4" class="btn-link open-modal-link">
+                  View Architecture &amp; Impact
+                  <span
+                    class="material-symbols-outlined icon-sm"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card 6: Ride-Hailing Platform -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <p class="project-eyebrow">
+                  Mobility &amp; Real-Time Logistics
+                </p>
+                <span class="project-index" aria-hidden="true">06</span>
+              </div>
+              <h3 class="project-title">06. Ride-Hailing Platform</h3>
+              <p class="project-desc">
+                Led development of core customer, driver, and admin dispatch
+                features with real-time geospatial updates, improving platform
+                stability for ~1,000 drivers.
+              </p>
+              <ul
+                class="tag-list"
+                aria-label="Technologies used in Ride-Hailing Platform"
+              >
+                <li class="tag-item">Mobile Apps</li>
+                <li class="tag-item">Node.js</li>
+                <li class="tag-item">WebSockets</li>
+                <li class="tag-item">Geolocation</li>
+                <li class="tag-item">Fleet Dispatch</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="#project-modal-5" class="btn-link open-modal-link">
+                  View Architecture &amp; Impact
+                  <span
+                    class="material-symbols-outlined icon-sm"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card 7: InvClick -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <p class="project-eyebrow">Spatial Analytics &amp; GIS</p>
+                <span class="project-index" aria-hidden="true">07</span>
+              </div>
+              <h3 class="project-title">
+                07. InvClick – Spatial &amp; Statistical Platform
+              </h3>
+              <p class="project-desc">
+                Custom business platform replacing manual workflows for a
+                spatial and statistical consultancy, reducing administrative
+                effort by 30% for 250+ users.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used in InvClick">
+                <li class="tag-item">WordPress</li>
+                <li class="tag-item">PHP</li>
+                <li class="tag-item">Custom Plugins</li>
+                <li class="tag-item">Spatial Analysis</li>
+                <li class="tag-item">Statistical Tools</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="#project-modal-6" class="btn-link open-modal-link">
+                  View Architecture &amp; Impact
+                  <span
+                    class="material-symbols-outlined icon-sm"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card 8: Ghana Sweden Chamber -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <p class="project-eyebrow">
+                  Corporate &amp; Bilateral Relations
+                </p>
+                <span class="project-index" aria-hidden="true">08</span>
+              </div>
+              <h3 class="project-title">
+                08. Ghana Sweden Chamber of Commerce
+              </h3>
+              <p class="project-desc">
+                Designed &amp; developed a responsive platform strengthening
+                engagement between institutions in Ghana and Sweden, boosting
+                online visibility by 85%.
+              </p>
+              <ul
+                class="tag-list"
+                aria-label="Technologies used in Ghana Sweden Chamber of Commerce"
+              >
+                <li class="tag-item">Web Design</li>
+                <li class="tag-item">Responsive UI</li>
+                <li class="tag-item">Custom Themes</li>
+                <li class="tag-item">Bilateral Portal</li>
+                <li class="tag-item">SEO Architecture</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="#project-modal-7" class="btn-link open-modal-link">
+                  View Architecture &amp; Impact
+                  <span
+                    class="material-symbols-outlined icon-sm"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         SKILLS & TOOLKIT SECTION
+         ========================================================================= -->
+      <!-- =========================================================================
+         LICENSES & CERTIFICATIONS SECTION (CREDLY VERIFIED)
+         ========================================================================= -->
+      <section
+        class="certifications-section"
+        id="certifications"
+        aria-labelledby="certifications-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <div class="section-header-content">
+              <p class="section-eyebrow">
+                <span class="eyebrow-slash" aria-hidden="true">/ </span
+                >Credentials
+              </p>
+              <h2 class="section-header-title" id="certifications-title">
+                Verified <span class="brand-accent">Badges</span>
+              </h2>
+              <p class="section-header-desc">
+                Industry certifications and technical credentials issued and
+                verified through Credly.
+              </p>
+            </div>
+            <a
+              href="https://www.credly.com/users/francis-sampah-junior"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline desktop-only"
+            >
+              <span>View Credly Profile</span>
+              <span class="material-symbols-outlined icon-sm" aria-hidden="true"
+                >open_in_new</span
+              >
+            </a>
+          </div>
+
+          <div class="badges-grid">
+            <!-- Badge 1: PSM I -->
+            <a
+              href="https://www.credly.com/badges/ee84f449-2d8b-484a-8c44-e564aa307888/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="badge-card"
+              aria-label="Professional Scrum Master I (PSM I) issued by Scrum.org"
+            >
+              <div class="badge-img-wrapper">
+                <img
+                  src="https://images.credly.com/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png"
+                  alt="Professional Scrum Master I (PSM I) Badge"
+                  class="badge-img"
+                  width="88"
+                  height="88"
+                  loading="lazy"
+                />
+              </div>
+              <div class="badge-content">
+                <h3 class="badge-title">
+                  Professional Scrum Master™ I (PSM I)
+                </h3>
+                <p class="badge-issuer">Scrum.org</p>
+              </div>
+            </a>
+
+            <!-- Badge 2: IBM Web Dev -->
+            <!-- <a
+              href="https://www.credly.com/badges/b46435a4-1490-43e7-b9d7-38a9bb98b650/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="badge-card"
+              aria-label="Web Development Fundamentals issued by IBM SkillsBuild"
+            >
+              <div class="badge-img-wrapper">
+                <img
+                  src="https://images.credly.com/images/0c1c6eed-818c-4f78-bfaa-7ea8704c863a/image.png"
+                  alt="Web Development Fundamentals Badge"
+                  class="badge-img"
+                  width="88"
+                  height="88"
+                  loading="lazy"
+                />
+              </div>
+              <div class="badge-content">
+                <h3 class="badge-title">Web Development Fundamentals</h3>
+                <p class="badge-issuer">IBM SkillsBuild</p>
+              </div>
+            </a> -->
+
+            <!-- Badge 3: Google Cloud APIs -->
+            <a
+              href="https://www.credly.com/badges/4d1344c3-b423-4a4b-8f69-2a00e28ab217/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="badge-card"
+              aria-label="Use APIs to Work with Cloud Storage issued by Google Cloud"
+            >
+              <div class="badge-img-wrapper">
+                <img
+                  src="https://images.credly.com/images/0c6a247d-8bbd-407b-8f83-dd863d251587/image.png"
+                  alt="Use APIs to Work with Cloud Storage Skill Badge"
+                  class="badge-img"
+                  width="88"
+                  height="88"
+                  loading="lazy"
+                />
+              </div>
+              <div class="badge-content">
+                <h3 class="badge-title">Use APIs to Work with Cloud Storage</h3>
+                <p class="badge-issuer">Google Cloud</p>
+              </div>
+            </a>
+
+            <!-- Badge 4: Google Cloud Data Protection -->
+            <a
+              href="https://www.credly.com/badges/1f49cbc6-75a6-436f-8d16-44b6b817889e/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="badge-card"
+              aria-label="Implement Cloud Storage and Data Protection Solutions issued by Google Cloud"
+            >
+              <div class="badge-img-wrapper">
+                <img
+                  src="https://images.credly.com/images/88e2d83e-e9ab-4615-a98b-c8536869e4e6/blob"
+                  alt="Implement Cloud Storage and Data Protection Solutions Skill Badge"
+                  class="badge-img"
+                  width="88"
+                  height="88"
+                  loading="lazy"
+                />
+              </div>
+              <div class="badge-content">
+                <h3 class="badge-title">
+                  Implement Cloud Storage &amp; Data Protection
+                </h3>
+                <p class="badge-issuer">Google Cloud</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         EXPERIENCE / JOURNEY SECTION
+         ========================================================================= -->
+      <section class="experience-section" id="experience">
+        <div class="container">
+          <h2 class="section-tag">Professional Experience</h2>
+
+          <div class="timeline">
+            <!-- Role 1 -->
+            <article class="timeline-item">
+              <div class="timeline-node active"></div>
+              <time class="timeline-date" datetime="2025-07"
+                >July 2025 – Present</time
+              >
+              <h3 class="timeline-role">
+                Independent Software Engineer / Software Consultant
+              </h3>
+              <div class="timeline-company">
+                Amartey Smarttech Innovations | Accra, Ghana
+              </div>
+            </article>
+
+            <!-- Role 2 -->
+            <article class="timeline-item">
+              <div class="timeline-node"></div>
+              <time class="timeline-date" datetime="2022-08/2025-07"
+                >August 2022 – July 2025 (3 Years)</time
+              >
+              <h3 class="timeline-role">Full Stack Software Engineer</h3>
+              <div class="timeline-company">Afro TechLabs | Tamale, Ghana</div>
+            </article>
+
+            <!-- Role 3 -->
+            <article class="timeline-item">
+              <div class="timeline-node"></div>
+              <time class="timeline-date" datetime="2022-08/2025-06"
+                >August 2022 – June 2025 (2 Years 11 Months)</time
+              >
+              <h3 class="timeline-role">Senior Software Engineer</h3>
+              <div class="timeline-company">
+                Invennico Techno Labs | Gujarat, India (Remote)
+              </div>
+            </article>
+
+            <!-- Role 4 -->
+            <article class="timeline-item">
+              <div class="timeline-node"></div>
+              <time class="timeline-date" datetime="2021-12/2023-01"
+                >December 2021 – January 2023 (1 Year 2 Months)</time
+              >
+              <h3 class="timeline-role">
+                Lead Software Engineer &amp; Co-Founder
+              </h3>
+              <div class="timeline-company">Wecari | Accra, Ghana</div>
+            </article>
+
+            <!-- Role 5 -->
+            <article class="timeline-item">
+              <div class="timeline-node"></div>
+              <time class="timeline-date" datetime="2021-02/2022-08"
+                >February 2021 – August 2022 (1 Year 7 Months)</time
+              >
+              <h3 class="timeline-role">Full-Stack Software Engineer</h3>
+              <div class="timeline-company">
+                Start Link Africa | Accra, Ghana
+              </div>
+            </article>
+
+            <!-- Role 6 -->
+            <article class="timeline-item">
+              <div class="timeline-node"></div>
+              <time class="timeline-date" datetime="2021-01/2022-08"
+                >January 2021 – August 2022 (1 Year 8 Months)</time
+              >
+              <h3 class="timeline-role">Classroom Teacher</h3>
+              <div class="timeline-company">
+                Ghana Education Service | Wa, Upper West Region, Ghana
+              </div>
+            </article>
+
+            <!-- Role 7 -->
+            <article class="timeline-item">
+              <div class="timeline-node"></div>
+              <time class="timeline-date" datetime="2018-11/2020-12"
+                >November 2018 – December 2020 (2 Years 2 Months)</time
+              >
+              <h3 class="timeline-role">
+                Junior Software Engineer &amp; Web Systems Administrator
+              </h3>
+              <div class="timeline-company">
+                Facio Innovations Technology | Wa, Ghana
+              </div>
+            </article>
+          </div>
+
+          <!-- Download Resume Action Button -->
+          <div class="resume-btn-wrapper">
+            <a
+              href="./assets/FRANCIS_AMARTEY_SAMPAH_Resume.pdf"
+              download="FRANCIS_AMARTEY_SAMPAH_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary btn-resume"
+            >
+              <span>Download Full Resume (PDF)</span>
+              <span class="material-symbols-outlined icon-lg">download</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
          EDUCATION SECTION
          ========================================================================= -->
-    <section class="education-section" id="education">
-      <div class="container">
-        <h2 class="section-tag">Education</h2>
+      <section class="education-section" id="education">
+        <div class="container">
+          <h2 class="section-tag">Education</h2>
 
-        <div class="education-grid">
-          <article class="education-card">
-            <div class="education-icon">
-              <span class="material-symbols-outlined">school</span>
-            </div>
-            <div>
-              <h3 class="education-degree">Bachelor of Science (B.Sc) - Business Information Systems</h3>
-              <div class="education-school">University for Development Studies</div>
-              <time class="education-date" datetime="2024-09/2027">September 2024 – 2027</time>
-            </div>
-          </article>
+          <div class="education-grid">
+            <article class="education-card">
+              <div class="education-icon">
+                <span class="material-symbols-outlined">school</span>
+              </div>
+              <div>
+                <h3 class="education-degree">
+                  Bachelor of Science (B.Sc) - Business Information Systems
+                </h3>
+                <div class="education-school">
+                  University for Development Studies
+                </div>
+                <time class="education-date" datetime="2024-09/2027"
+                  >September 2024 – 2027</time
+                >
+              </div>
+            </article>
 
-          <article class="education-card">
-            <div class="education-icon">
-              <span class="material-symbols-outlined">workspace_premium</span>
-            </div>
-            <div>
-              <h3 class="education-degree">Diploma in Basic Education</h3>
-              <div class="education-school">Nusrat Jahan Ahmadiyya College of Education (Wa, Ghana)</div>
-              <time class="education-date" datetime="2019-07">Graduated July 2019</time>
-            </div>
-          </article>
+            <article class="education-card">
+              <div class="education-icon">
+                <span class="material-symbols-outlined">workspace_premium</span>
+              </div>
+              <div>
+                <h3 class="education-degree">Diploma in Basic Education</h3>
+                <div class="education-school">
+                  Nusrat Jahan Ahmadiyya College of Education (Wa, Ghana)
+                </div>
+                <time class="education-date" datetime="2019-07"
+                  >Graduated July 2019</time
+                >
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- =========================================================================
+      <!-- =========================================================================
          CONTACT SECTION
          ========================================================================= -->
-    <section class="contact-section" id="contact">
-      <div class="container">
-        <div class="contact-card-compact">
-          <div class="contact-bg-glow"></div>
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="contact-card-compact">
+            <div class="contact-bg-glow"></div>
 
-          <div class="contact-compact-header">
-            <h2 class="contact-heading">Let's build something <span class="text-primary">extraordinary</span>.</h2>
-            <p class="contact-subtext">
-              Looking to simplify complex business processes, build scalable digital products, or develop custom
-              enterprise systems? Reach out directly—I'm always open to discussing new engineering projects, consulting,
-              and technical partnerships.
-            </p>
-          </div>
+            <div class="contact-compact-header">
+              <h2 class="contact-heading">
+                Let's build something
+                <span class="text-primary">extraordinary</span>.
+              </h2>
+              <p class="contact-subtext">
+                Looking to simplify complex business processes, build scalable
+                digital products, or develop custom enterprise systems? Reach
+                out directly. I'm always open to connecting with professionals,
+                founders, and organizations looking to build impactful digital
+                products.
+              </p>
+            </div>
 
-          <div class="contact-pills-grid">
-            <!-- Email Pill -->
-            <a href="mailto:francissampah2@gmail.com" class="contact-pill-item">
-              <div class="pill-icon-wrapper icon-blue">
-                <span class="material-symbols-outlined">mail</span>
-              </div>
-              <div class="pill-info">
-                <span class="pill-label">Direct Email</span>
-                <span class="pill-value">francissampah2@gmail.com</span>
-              </div>
-              <span class="material-symbols-outlined pill-arrow">arrow_outward</span>
-            </a>
+            <div class="contact-pills-grid">
+              <!-- Email Pill -->
+              <a
+                href="mailto:francissampah2@gmail.com"
+                class="contact-pill-item"
+              >
+                <div class="pill-icon-wrapper icon-blue">
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div class="pill-info">
+                  <span class="pill-label">Direct Email</span>
+                  <span class="pill-value">francissampah2@gmail.com</span>
+                </div>
+                <span class="material-symbols-outlined pill-arrow"
+                  >arrow_outward</span
+                >
+              </a>
 
-            <!-- Mobile Pill -->
-            <a href="tel:+233542176913" class="contact-pill-item">
-              <div class="pill-icon-wrapper icon-indigo">
-                <span class="material-symbols-outlined">call</span>
-              </div>
-              <div class="pill-info">
-                <span class="pill-label">Mobile &amp; WhatsApp</span>
-                <span class="pill-value">+233 54 217 6913</span>
-              </div>
-              <span class="material-symbols-outlined pill-arrow">arrow_outward</span>
-            </a>
+              <!-- Mobile Pill -->
+              <a href="tel:+233542176913" class="contact-pill-item">
+                <div class="pill-icon-wrapper icon-indigo">
+                  <span class="material-symbols-outlined">call</span>
+                </div>
+                <div class="pill-info">
+                  <span class="pill-label">Mobile &amp; WhatsApp</span>
+                  <span class="pill-value">+233 54 217 6913</span>
+                </div>
+                <span class="material-symbols-outlined pill-arrow"
+                  >arrow_outward</span
+                >
+              </a>
 
-            <!-- LinkedIn Pill -->
-            <a href="https://www.linkedin.com/in/sampah-francis/" target="_blank" rel="noopener noreferrer"
-              class="contact-pill-item">
-              <div class="pill-icon-wrapper icon-rose">
-                <span class="material-symbols-outlined">share</span>
-              </div>
-              <div class="pill-info">
-                <span class="pill-label">LinkedIn</span>
-                <span class="pill-value">Francis Amartey Sampah</span>
-              </div>
-              <span class="material-symbols-outlined pill-arrow">arrow_outward</span>
-            </a>
+              <!-- LinkedIn Pill -->
+              <a
+                href="https://www.linkedin.com/in/sampah-francis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-pill-item"
+              >
+                <div class="pill-icon-wrapper icon-rose">
+                  <span class="material-symbols-outlined">share</span>
+                </div>
+                <div class="pill-info">
+                  <span class="pill-label">LinkedIn</span>
+                  <span class="pill-value">Francis Amartey Sampah</span>
+                </div>
+                <span class="material-symbols-outlined pill-arrow"
+                  >arrow_outward</span
+                >
+              </a>
 
-            <!-- GitHub Pill -->
-            <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
-              <div class="pill-icon-wrapper icon-indigo">
-                <span class="material-symbols-outlined">code</span>
-              </div>
-              <div class="pill-info">
-                <span class="pill-label">GitHub</span>
-                <span class="pill-value">@francisjun</span>
-              </div>
-              <span class="material-symbols-outlined pill-arrow">arrow_outward</span>
-            </a>
+              <!-- GitHub Pill -->
+              <a
+                href="https://github.com/francisjun"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-pill-item"
+              >
+                <div class="pill-icon-wrapper icon-indigo">
+                  <span class="material-symbols-outlined">code</span>
+                </div>
+                <div class="pill-info">
+                  <span class="pill-label">GitHub</span>
+                  <span class="pill-value">@francisjun</span>
+                </div>
+                <span class="material-symbols-outlined pill-arrow"
+                  >arrow_outward</span
+                >
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-  </main>
-
-  <!-- =========================================================================
+    <!-- =========================================================================
        8 STATIC PROJECT MODAL DIALOGS (DISCOVERABLE IN DOM & ZERO-JS :TARGET)
        ========================================================================= -->
 
-  <!-- Modal 0: ERP System -->
-  <dialog id="project-modal-0" class="project-modal" aria-labelledby="modal-title-0">
-    <div class="modal-box">
-      <a href="#projects" class="modal-close-btn" aria-label="Close dialog">&times;</a>
-      <h3 id="modal-title-0" class="modal-title">Enterprise Resource Planning (ERP) System</h3>
-      <div class="modal-tags">
-        <span class="project-tag">Laravel</span>
-        <span class="project-tag">MySQL</span>
-        <span class="project-tag">TypeScript</span>
-        <span class="project-tag">ERP</span>
-        <span class="project-tag">Workflow Automation</span>
-      </div>
-      <div class="modal-body">
-        <p>Designed and delivered an Enterprise Resource Planning (ERP) platform that centralized core business
-          operations, improved process visibility, and reduced manual workflows by 45% across 6 corporate
-          departments.</p>
-        <h4 class="modal-subtitle">Key Engagement Highlights</h4>
-        <ul class="modal-feature-list">
-          <li>Multi-department operational data centralization</li>
-          <li>Automated workflow routing and approval processes</li>
-          <li>Real-time resource utilization &amp; reporting analytics</li>
-          <li>Significant reduction in manual paper-based processes</li>
-        </ul>
-        <div class="modal-actions">
-          <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="btn-outline">
-            <span>GitHub Code</span>
-            <span class="material-symbols-outlined icon-sm">code</span>
-          </a>
+    <!-- Modal 0: ERP System -->
+    <dialog
+      id="project-modal-0"
+      class="project-modal"
+      aria-labelledby="modal-title-0"
+    >
+      <div class="modal-box">
+        <a href="#projects" class="modal-close-btn" aria-label="Close dialog"
+          >&times;</a
+        >
+        <h3 id="modal-title-0" class="modal-title">
+          Enterprise Resource Planning (ERP) System
+        </h3>
+        <div class="modal-tags">
+          <span class="project-tag">Laravel</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">ERP</span>
+          <span class="project-tag">Workflow Automation</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            Designed and delivered an Enterprise Resource Planning (ERP)
+            platform that centralized core business operations, improved process
+            visibility, and reduced manual workflows by 45% across 6 corporate
+            departments.
+          </p>
+          <h4 class="modal-subtitle">Key Engagement Highlights</h4>
+          <ul class="modal-feature-list">
+            <li>Multi-department operational data centralization</li>
+            <li>Automated workflow routing and approval processes</li>
+            <li>Real-time resource utilization &amp; reporting analytics</li>
+            <li>Significant reduction in manual paper-based processes</li>
+          </ul>
+          <div class="modal-actions">
+            <a
+              href="https://github.com/francisjun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>GitHub Code</span>
+              <span class="material-symbols-outlined icon-sm">code</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </dialog>
+    </dialog>
 
-  <!-- Modal 1: LIMS -->
-  <dialog id="project-modal-1" class="project-modal" aria-labelledby="modal-title-1">
-    <div class="modal-box">
-      <a href="#projects" class="modal-close-btn" aria-label="Close dialog">&times;</a>
-      <h3 id="modal-title-1" class="modal-title">Laboratory Information Management System (LIMS)</h3>
-      <div class="modal-tags">
-        <span class="project-tag">TypeScript</span>
-        <span class="project-tag">Node.js</span>
-        <span class="project-tag">PostgreSQL</span>
-        <span class="project-tag">LIMS</span>
-        <span class="project-tag">Healthcare</span>
-      </div>
-      <div class="modal-body">
-        <p>Delivered a Laboratory Information Management System (LIMS) that digitized laboratory tracking workflows,
-          improved operational tracking, and reduced processing time by 60% across 3 active laboratories.</p>
-        <h4 class="modal-subtitle">Key Engagement Highlights</h4>
-        <ul class="modal-feature-list">
-          <li>End-to-end sample lifecycle tracking from intake to reporting</li>
-          <li>Strict clinical data integrity and validation pipelines</li>
-          <li>Operational bottleneck tracking for lab technicians</li>
-          <li>Centralized reporting system accessible by clinical teams</li>
-        </ul>
-        <div class="modal-actions">
-          <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="btn-outline">
-            <span>GitHub Code</span>
-            <span class="material-symbols-outlined icon-sm">code</span>
-          </a>
+    <!-- Modal 1: LIMS -->
+    <dialog
+      id="project-modal-1"
+      class="project-modal"
+      aria-labelledby="modal-title-1"
+    >
+      <div class="modal-box">
+        <a href="#projects" class="modal-close-btn" aria-label="Close dialog"
+          >&times;</a
+        >
+        <h3 id="modal-title-1" class="modal-title">
+          Laboratory Information Management System (LIMS)
+        </h3>
+        <div class="modal-tags">
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">LIMS</span>
+          <span class="project-tag">Healthcare</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            Delivered a Laboratory Information Management System (LIMS) that
+            digitized laboratory tracking workflows, improved operational
+            tracking, and reduced processing time by 60% across 3 active
+            laboratories.
+          </p>
+          <h4 class="modal-subtitle">Key Engagement Highlights</h4>
+          <ul class="modal-feature-list">
+            <li>
+              End-to-end sample lifecycle tracking from intake to reporting
+            </li>
+            <li>Strict clinical data integrity and validation pipelines</li>
+            <li>Operational bottleneck tracking for lab technicians</li>
+            <li>Centralized reporting system accessible by clinical teams</li>
+          </ul>
+          <div class="modal-actions">
+            <a
+              href="https://github.com/francisjun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>GitHub Code</span>
+              <span class="material-symbols-outlined icon-sm">code</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </dialog>
+    </dialog>
 
-  <!-- Modal 2: Medkart -->
-  <dialog id="project-modal-2" class="project-modal" aria-labelledby="modal-title-2">
-    <div class="modal-box">
-      <a href="#projects" class="modal-close-btn" aria-label="Close dialog">&times;</a>
-      <h3 id="modal-title-2" class="modal-title">Medkart – Online Generic Medicine Store</h3>
-      <div class="modal-tags">
-        <span class="project-tag">React</span>
-        <span class="project-tag">Node.js</span>
-        <span class="project-tag">Maps API</span>
-        <span class="project-tag">E-Commerce</span>
-        <span class="project-tag">India</span>
-      </div>
-      <div class="modal-body">
-        <p>Contributed to one of India's leading online generic medicine platforms serving thousands of daily customers.
-          Implemented key customer-facing features including a store locator and enhanced mobile responsiveness.</p>
-        <h4 class="modal-subtitle">Key Engagement Highlights</h4>
-        <ul class="modal-feature-list">
-          <li>Interactive store locator for physical pharmacy branches</li>
-          <li>Mobile-first responsive interface for high accessibility</li>
-          <li>High-scale product browsing and medicine lookup workflow</li>
-          <li>Optimized client-side rendering performance</li>
-        </ul>
-        <div class="modal-actions">
-          <a href="https://www.medkart.in/" target="_blank" rel="noopener noreferrer" class="btn-primary">
-            <span>Visit Live Platform</span>
-            <span class="material-symbols-outlined icon-sm">open_in_new</span>
-          </a>
-          <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="btn-outline">
-            <span>GitHub Code</span>
-            <span class="material-symbols-outlined icon-sm">code</span>
-          </a>
+    <!-- Modal 2: Medkart -->
+    <dialog
+      id="project-modal-2"
+      class="project-modal"
+      aria-labelledby="modal-title-2"
+    >
+      <div class="modal-box">
+        <a href="#projects" class="modal-close-btn" aria-label="Close dialog"
+          >&times;</a
+        >
+        <h3 id="modal-title-2" class="modal-title">
+          Medkart – Online Generic Medicine Store
+        </h3>
+        <div class="modal-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Maps API</span>
+          <span class="project-tag">E-Commerce</span>
+          <span class="project-tag">India</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            Contributed to one of India's leading online generic medicine
+            platforms serving thousands of daily customers. Implemented key
+            customer-facing features including a store locator and enhanced
+            mobile responsiveness.
+          </p>
+          <h4 class="modal-subtitle">Key Engagement Highlights</h4>
+          <ul class="modal-feature-list">
+            <li>Interactive store locator for physical pharmacy branches</li>
+            <li>Mobile-first responsive interface for high accessibility</li>
+            <li>High-scale product browsing and medicine lookup workflow</li>
+            <li>Optimized client-side rendering performance</li>
+          </ul>
+          <div class="modal-actions">
+            <a
+              href="https://www.medkart.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              <span>Visit Live Platform</span>
+              <span class="material-symbols-outlined icon-sm">open_in_new</span>
+            </a>
+            <a
+              href="https://github.com/francisjun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>GitHub Code</span>
+              <span class="material-symbols-outlined icon-sm">code</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </dialog>
+    </dialog>
 
-  <!-- Modal 3: Unific -->
-  <dialog id="project-modal-3" class="project-modal" aria-labelledby="modal-title-3">
-    <div class="modal-box">
-      <a href="#projects" class="modal-close-btn" aria-label="Close dialog">&times;</a>
-      <h3 id="modal-title-3" class="modal-title">Unific – E-Commerce &amp; Marketing Data Sync</h3>
-      <div class="modal-tags">
-        <span class="project-tag">Node.js</span>
-        <span class="project-tag">TypeScript</span>
-        <span class="project-tag">REST APIs</span>
-        <span class="project-tag">Webhooks</span>
-        <span class="project-tag">Integration</span>
-      </div>
-      <div class="modal-body">
-        <p>Contributed to the development of a platform that synchronizes data between e-commerce and marketing
-          platforms, helping over 200 businesses maintain consistent customer and operational data across integrated
-          systems.</p>
-        <h4 class="modal-subtitle">Key Engagement Highlights</h4>
-        <ul class="modal-feature-list">
-          <li>Real-time bi-directional data synchronization pipeline</li>
-          <li>Integration with major e-commerce and marketing APIs</li>
-          <li>Reliable webhook listener and retry queue processing</li>
-          <li>Enhanced operational visibility for 200+ integrated businesses</li>
-        </ul>
-        <div class="modal-actions">
-          <a href="https://www.unific.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">
-            <span>Visit Live Platform</span>
-            <span class="material-symbols-outlined icon-sm">open_in_new</span>
-          </a>
-          <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="btn-outline">
-            <span>GitHub Code</span>
-            <span class="material-symbols-outlined icon-sm">code</span>
-          </a>
+    <!-- Modal 3: Unific -->
+    <dialog
+      id="project-modal-3"
+      class="project-modal"
+      aria-labelledby="modal-title-3"
+    >
+      <div class="modal-box">
+        <a href="#projects" class="modal-close-btn" aria-label="Close dialog"
+          >&times;</a
+        >
+        <h3 id="modal-title-3" class="modal-title">
+          Unific – E-Commerce &amp; Marketing Data Sync
+        </h3>
+        <div class="modal-tags">
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">REST APIs</span>
+          <span class="project-tag">Webhooks</span>
+          <span class="project-tag">Integration</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            Contributed to the development of a platform that synchronizes data
+            between e-commerce and marketing platforms, helping over 200
+            businesses maintain consistent customer and operational data across
+            integrated systems.
+          </p>
+          <h4 class="modal-subtitle">Key Engagement Highlights</h4>
+          <ul class="modal-feature-list">
+            <li>Real-time bi-directional data synchronization pipeline</li>
+            <li>Integration with major e-commerce and marketing APIs</li>
+            <li>Reliable webhook listener and retry queue processing</li>
+            <li>
+              Enhanced operational visibility for 200+ integrated businesses
+            </li>
+          </ul>
+          <div class="modal-actions">
+            <a
+              href="https://www.unific.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              <span>Visit Live Platform</span>
+              <span class="material-symbols-outlined icon-sm">open_in_new</span>
+            </a>
+            <a
+              href="https://github.com/francisjun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>GitHub Code</span>
+              <span class="material-symbols-outlined icon-sm">code</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </dialog>
+    </dialog>
 
-  <!-- Modal 4: Hotel Booking -->
-  <dialog id="project-modal-4" class="project-modal" aria-labelledby="modal-title-4">
-    <div class="modal-box">
-      <a href="#projects" class="modal-close-btn" aria-label="Close dialog">&times;</a>
-      <h3 id="modal-title-4" class="modal-title">Hotel Booking Management System</h3>
-      <div class="modal-tags">
-        <span class="project-tag">Laravel</span>
-        <span class="project-tag">MySQL</span>
-        <span class="project-tag">JavaScript</span>
-        <span class="project-tag">Hospitality</span>
-      </div>
-      <div class="modal-body">
-        <p>Independently delivered a complete hotel booking platform from design through deployment, replacing manual
-          reservation processes, boosting operational efficiency by 80%, and supporting daily operations for 400+ daily
-          customers.</p>
-        <h4 class="modal-subtitle">Key Engagement Highlights</h4>
-        <ul class="modal-feature-list">
-          <li>Full reservation &amp; room allocation workflows</li>
-          <li>Centralized administrative reporting dashboard</li>
-          <li>Automated booking confirmation and guest tracking</li>
-          <li>Independent end-to-end delivery from requirements to cloud deployment</li>
-        </ul>
-        <div class="modal-actions">
-          <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="btn-outline">
-            <span>GitHub Code</span>
-            <span class="material-symbols-outlined icon-sm">code</span>
-          </a>
+    <!-- Modal 4: Hotel Booking -->
+    <dialog
+      id="project-modal-4"
+      class="project-modal"
+      aria-labelledby="modal-title-4"
+    >
+      <div class="modal-box">
+        <a href="#projects" class="modal-close-btn" aria-label="Close dialog"
+          >&times;</a
+        >
+        <h3 id="modal-title-4" class="modal-title">
+          Hotel Booking Management System
+        </h3>
+        <div class="modal-tags">
+          <span class="project-tag">Laravel</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Hospitality</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            Independently delivered a complete hotel booking platform from
+            design through deployment, replacing manual reservation processes,
+            boosting operational efficiency by 80%, and supporting daily
+            operations for 400+ daily customers.
+          </p>
+          <h4 class="modal-subtitle">Key Engagement Highlights</h4>
+          <ul class="modal-feature-list">
+            <li>Full reservation &amp; room allocation workflows</li>
+            <li>Centralized administrative reporting dashboard</li>
+            <li>Automated booking confirmation and guest tracking</li>
+            <li>
+              Independent end-to-end delivery from requirements to cloud
+              deployment
+            </li>
+          </ul>
+          <div class="modal-actions">
+            <a
+              href="https://github.com/francisjun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>GitHub Code</span>
+              <span class="material-symbols-outlined icon-sm">code</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </dialog>
+    </dialog>
 
-  <!-- Modal 5: Ride-Hailing Platform -->
-  <dialog id="project-modal-5" class="project-modal" aria-labelledby="modal-title-5">
-    <div class="modal-box">
-      <a href="#projects" class="modal-close-btn" aria-label="Close dialog">&times;</a>
-      <h3 id="modal-title-5" class="modal-title">Ride-Hailing Platform</h3>
-      <div class="modal-tags">
-        <span class="project-tag">Mobile Apps</span>
-        <span class="project-tag">Node.js</span>
-        <span class="project-tag">WebSockets</span>
-        <span class="project-tag">Logistics</span>
-      </div>
-      <div class="modal-body">
-        <p>Led development of key platform features across customer, driver, and administrative applications,
-          delivering enhancements that improved platform stability and user experience for approximately 1,000 drivers.
-        </p>
-        <h4 class="modal-subtitle">Key Engagement Highlights</h4>
-        <ul class="modal-feature-list">
-          <li>Real-time location tracking &amp; dispatch workflows</li>
-          <li>Cross-platform rider, driver, and admin app features</li>
-          <li>Improved platform stability under peak traffic loads</li>
-          <li>Enhanced driver earnings and trip history modules</li>
-        </ul>
-        <div class="modal-actions">
-          <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="btn-outline">
-            <span>GitHub Code</span>
-            <span class="material-symbols-outlined icon-sm">code</span>
-          </a>
+    <!-- Modal 5: Ride-Hailing Platform -->
+    <dialog
+      id="project-modal-5"
+      class="project-modal"
+      aria-labelledby="modal-title-5"
+    >
+      <div class="modal-box">
+        <a href="#projects" class="modal-close-btn" aria-label="Close dialog"
+          >&times;</a
+        >
+        <h3 id="modal-title-5" class="modal-title">Ride-Hailing Platform</h3>
+        <div class="modal-tags">
+          <span class="project-tag">Mobile Apps</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">WebSockets</span>
+          <span class="project-tag">Logistics</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            Led development of key platform features across customer, driver,
+            and administrative applications, delivering enhancements that
+            improved platform stability and user experience for approximately
+            1,000 drivers.
+          </p>
+          <h4 class="modal-subtitle">Key Engagement Highlights</h4>
+          <ul class="modal-feature-list">
+            <li>Real-time location tracking &amp; dispatch workflows</li>
+            <li>Cross-platform rider, driver, and admin app features</li>
+            <li>Improved platform stability under peak traffic loads</li>
+            <li>Enhanced driver earnings and trip history modules</li>
+          </ul>
+          <div class="modal-actions">
+            <a
+              href="https://github.com/francisjun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>GitHub Code</span>
+              <span class="material-symbols-outlined icon-sm">code</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </dialog>
+    </dialog>
 
-  <!-- Modal 6: InvClick -->
-  <dialog id="project-modal-6" class="project-modal" aria-labelledby="modal-title-6">
-    <div class="modal-box">
-      <a href="#projects" class="modal-close-btn" aria-label="Close dialog">&times;</a>
-      <h3 id="modal-title-6" class="modal-title">InvClick – Spatial &amp; Statistical Platform</h3>
-      <div class="modal-tags">
-        <span class="project-tag">WordPress</span>
-        <span class="project-tag">PHP</span>
-        <span class="project-tag">MySQL</span>
-        <span class="project-tag">Custom Plugins</span>
-      </div>
-      <div class="modal-body">
-        <p>Developed a custom WordPress-powered business platform replacing fragmented manual workflows with centralized
-          operational processes for a spatial and statistical consultancy, reducing administrative effort by 30% for
-          250+ users.</p>
-        <h4 class="modal-subtitle">Key Engagement Highlights</h4>
-        <ul class="modal-feature-list">
-          <li>Bespoke WordPress theme and plugin development</li>
-          <li>Custom workflow management tailored for statistical consulting</li>
-          <li>Improved reporting accuracy and operational visibility</li>
-          <li>Streamlined user onboarding and access permissions</li>
-        </ul>
-        <div class="modal-actions">
-          <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="btn-outline">
-            <span>GitHub Code</span>
-            <span class="material-symbols-outlined icon-sm">code</span>
-          </a>
+    <!-- Modal 6: InvClick -->
+    <dialog
+      id="project-modal-6"
+      class="project-modal"
+      aria-labelledby="modal-title-6"
+    >
+      <div class="modal-box">
+        <a href="#projects" class="modal-close-btn" aria-label="Close dialog"
+          >&times;</a
+        >
+        <h3 id="modal-title-6" class="modal-title">
+          InvClick – Spatial &amp; Statistical Platform
+        </h3>
+        <div class="modal-tags">
+          <span class="project-tag">WordPress</span>
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">Custom Plugins</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            Developed a custom WordPress-powered business platform replacing
+            fragmented manual workflows with centralized operational processes
+            for a spatial and statistical consultancy, reducing administrative
+            effort by 30% for 250+ users.
+          </p>
+          <h4 class="modal-subtitle">Key Engagement Highlights</h4>
+          <ul class="modal-feature-list">
+            <li>Bespoke WordPress theme and plugin development</li>
+            <li>
+              Custom workflow management tailored for statistical consulting
+            </li>
+            <li>Improved reporting accuracy and operational visibility</li>
+            <li>Streamlined user onboarding and access permissions</li>
+          </ul>
+          <div class="modal-actions">
+            <a
+              href="https://github.com/francisjun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>GitHub Code</span>
+              <span class="material-symbols-outlined icon-sm">code</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </dialog>
+    </dialog>
 
-  <!-- Modal 7: Ghana Sweden Chamber -->
-  <dialog id="project-modal-7" class="project-modal" aria-labelledby="modal-title-7">
-    <div class="modal-box">
-      <a href="#projects" class="modal-close-btn" aria-label="Close dialog">&times;</a>
-      <h3 id="modal-title-7" class="modal-title">Ghana Sweden Chamber of Commerce</h3>
-      <div class="modal-tags">
-        <span class="project-tag">Web Design</span>
-        <span class="project-tag">Responsive</span>
-        <span class="project-tag">Custom Themes</span>
-        <span class="project-tag">International</span>
-      </div>
-      <div class="modal-body">
-        <p>Designed and developed a responsive WordPress website with custom functionality strengthening engagement
-          between institutions in Ghana and Sweden, boosting online visibility and user engagement by 85%.</p>
-        <h4 class="modal-subtitle">Key Engagement Highlights</h4>
-        <ul class="modal-feature-list">
-          <li>Custom theme development tailored for bilateral trade organization</li>
-          <li>Modern high-performance web experience optimized for international traffic</li>
-          <li>Integrated institution directory and event announcements</li>
-          <li>85% increase in online visibility and user interaction</li>
-        </ul>
-        <div class="modal-actions">
-          <a href="https://ghanaswedenchamber.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">
-            <span>Visit Live Platform</span>
-            <span class="material-symbols-outlined icon-sm">open_in_new</span>
-          </a>
-          <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer" class="btn-outline">
-            <span>GitHub Code</span>
-            <span class="material-symbols-outlined icon-sm">code</span>
-          </a>
+    <!-- Modal 7: Ghana Sweden Chamber -->
+    <dialog
+      id="project-modal-7"
+      class="project-modal"
+      aria-labelledby="modal-title-7"
+    >
+      <div class="modal-box">
+        <a href="#projects" class="modal-close-btn" aria-label="Close dialog"
+          >&times;</a
+        >
+        <h3 id="modal-title-7" class="modal-title">
+          Ghana Sweden Chamber of Commerce
+        </h3>
+        <div class="modal-tags">
+          <span class="project-tag">Web Design</span>
+          <span class="project-tag">Responsive</span>
+          <span class="project-tag">Custom Themes</span>
+          <span class="project-tag">International</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            Designed and developed a responsive WordPress website with custom
+            functionality strengthening engagement between institutions in Ghana
+            and Sweden, boosting online visibility and user engagement by 85%.
+          </p>
+          <h4 class="modal-subtitle">Key Engagement Highlights</h4>
+          <ul class="modal-feature-list">
+            <li>
+              Custom theme development tailored for bilateral trade organization
+            </li>
+            <li>
+              Modern high-performance web experience optimized for international
+              traffic
+            </li>
+            <li>Integrated institution directory and event announcements</li>
+            <li>85% increase in online visibility and user interaction</li>
+          </ul>
+          <div class="modal-actions">
+            <a
+              href="https://ghanaswedenchamber.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              <span>Visit Live Platform</span>
+              <span class="material-symbols-outlined icon-sm">open_in_new</span>
+            </a>
+            <a
+              href="https://github.com/francisjun"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>GitHub Code</span>
+              <span class="material-symbols-outlined icon-sm">code</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </dialog>
+    </dialog>
 
-  <!-- =========================================================================
+    <!-- =========================================================================
        FOOTER
        ========================================================================= -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-brand">FRANCIS <span class="brand-accent">AMARTEY</span> SAMPAH</div>
-      <div class="footer-links">
-        <a href="https://github.com/francisjun" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/sampah-francis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:francissampah2@gmail.com">Email</a>
-        <a href="tel:+233542176913">Mobile</a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-brand">
+          FRANCIS <span class="brand-accent">AMARTEY</span> SAMPAH
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://github.com/francisjun"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/sampah-francis/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a href="mailto:francissampah2@gmail.com">Email</a>
+          <a href="tel:+233542176913">Mobile</a>
+        </div>
+        <div class="footer-copy">
+          &copy; <span id="currentYear">2026</span> Francis Amartey Sampah. All
+          rights reserved.
+        </div>
       </div>
-      <div class="footer-copy">
-        &copy; <span id="currentYear">2026</span> Francis Amartey Sampah. All rights reserved.
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Client JavaScript (Progressive Enhancement) -->
-  <script src="./script.js" defer></script>
-</body>
-
+    <!-- Client JavaScript (Progressive Enhancement) -->
+    <script src="./script.js" defer></script>
+  </body>
 </html>

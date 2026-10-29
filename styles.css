@@ -537,93 +537,112 @@ img {
    5. ABOUT / STORY SECTION
    -------------------------------------------------------------------------- */
 .about-section {
-  padding: 7rem 0;
+  padding: 6rem 0;
   background-color: var(--bg-surface-low);
+}
+
+.about-top-header {
+  margin-bottom: 2.25rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 5fr 7fr;
-  gap: 4rem;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 4.5rem;
   align-items: start;
 }
 
-.story-text {
-  font-size: clamp(0.95rem, 1.5vw + 0.5rem, 1.1rem);
-  color: var(--text-variant);
+.story-content-col {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  line-height: 1.8;
 }
 
-.value-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.story-desc {
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  color: var(--text-variant);
+  line-height: 1.6;
+  margin: 0 0 1.75rem 0;
+  max-width: 32rem;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
   gap: 1.25rem;
-  margin-bottom: 2.5rem;
 }
 
-.value-card {
-  background-color: var(--bg-surface-high);
-  padding: 1.75rem 1rem;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
+.story-lead {
+  font-size: clamp(1.02rem, 1.2vw, 1.1rem);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.story-content p:not(.story-lead) {
+  font-size: clamp(0.92rem, 1.1vw, 0.98rem);
+  color: var(--text-variant);
+  line-height: 1.75;
+}
+
+.story-sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.2s ease;
 }
 
-.value-card:hover {
-  border-color: var(--border-highlight);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card);
-}
-
-.value-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.6rem;
-}
-
-.value-label {
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-variant);
-}
-
-.value-title {
+.principles-heading {
   font-family: var(--font-headline);
-  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
-  font-weight: 600;
+  font-size: clamp(1.15rem, 1.5vw, 1.25rem);
+  font-weight: 700;
   color: var(--text-primary);
-  margin-top: 0.25rem;
+  line-height: 1.6;
+  margin: 0 0 1.75rem 0;
 }
 
-.tech-pills {
+.principles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
+  flex-direction: column;
 }
 
-.tech-pill {
-  padding: 0.45rem 1.1rem;
-  background-color: var(--bg-surface-highest);
-  border-radius: var(--radius-full);
-  font-size: 0.72rem;
+.principle-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.15rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.principle-item:last-child {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.principle-number {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
-  transition: transform 0.2s ease;
+  color: var(--color-primary);
+  padding-top: 0.15rem;
+  flex-shrink: 0;
 }
 
-.tech-pill:hover {
-  background-color: var(--color-primary-dim);
-  color: var(--color-on-primary);
+.principle-title {
+  font-family: var(--font-headline);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.principle-desc {
+  font-size: 0.86rem;
+  color: var(--text-variant);
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -666,7 +685,7 @@ img {
 
 .section-header-title {
   font-family: var(--font-headline);
-  font-size: clamp(2rem, 3.5vw + 0.5rem, 2.75rem);
+  font-size: clamp(1.75rem, 2.8vw + 0.5rem, 2.65rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
@@ -828,92 +847,79 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   7. SKILLS & TOOLKIT SECTION
+   7. VERIFIED BADGES & CREDENTIALS SECTION (CREDLY STYLE)
    -------------------------------------------------------------------------- */
-.skills-section {
-  padding: 7rem 0;
+.certifications-section {
+  padding: 6rem 0;
   background-color: var(--bg-surface-low);
 }
 
-.skills-grid {
+.badges-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
-.skill-card {
+.badge-card {
   background-color: var(--bg-surface-high);
-  padding: 2.25rem 1.75rem;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
-  transition: transform 0.2s ease;
+  border: 1.5px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 1.15rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.skill-card:hover {
+.badge-card:hover {
+  transform: translateY(-3px);
   border-color: var(--border-highlight);
   box-shadow: var(--shadow-card);
 }
 
-.skill-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.75rem;
-}
-
-.skill-icon-badge {
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: var(--radius-md);
+.badge-img-wrapper {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 
-.skill-icon-primary { background: rgba(167, 165, 255, 0.12); color: var(--color-primary); }
-.skill-icon-secondary { background: rgba(52, 181, 250, 0.12); color: var(--color-secondary); }
-.skill-icon-tertiary { background: rgba(255, 157, 209, 0.12); color: var(--color-tertiary); }
-
-.skill-title {
-  font-family: var(--font-headline);
-  font-size: clamp(1.1rem, 2vw, 1.25rem);
-  font-weight: 600;
-  color: var(--text-primary);
+.badge-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.skill-list {
+.badge-card:hover .badge-img {
+  transform: scale(1.05);
+}
+
+.badge-content {
   display: flex;
   flex-direction: column;
-  gap: 1.35rem;
+  gap: 0.3rem;
+  min-width: 0;
 }
 
-.skill-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
+.badge-title {
+  font-family: var(--font-headline);
+  font-size: clamp(1.02rem, 1.3vw, 1.15rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.badge-issuer {
+  font-size: 0.88rem;
+  font-weight: 500;
   color: var(--text-variant);
-  margin-bottom: 0.4rem;
+  margin: 0;
 }
-
-.progress-track {
-  height: 0.35rem;
-  background-color: var(--bg-surface-highest);
-  border-radius: var(--radius-full);
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  border-radius: var(--radius-full);
-  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.fill-primary { background-color: var(--color-primary); }
-.fill-secondary { background-color: var(--color-secondary); }
-.fill-tertiary { background-color: var(--color-tertiary); }
 
 /* --------------------------------------------------------------------------
    8. EXPERIENCE / JOURNEY SECTION
@@ -1367,6 +1373,52 @@ img {
    13. COMPREHENSIVE RESPONSIVE BREAKPOINTS
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
+  /* Section Header Sizing on Tablets */
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-top-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .section-header-title {
+    font-size: clamp(1.65rem, 2.5vw + 0.5rem, 2.15rem);
+    line-height: 1.25;
+  }
+
+  .section-header-desc {
+    max-width: 28rem;
+    font-size: 0.92rem;
+  }
+
+  .story-desc {
+    font-size: 0.98rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .principles-heading {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-tag {
+    font-size: 1.45rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .section-tag-center {
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 3.5vw + 0.5rem, 2.65rem);
+  }
+
+  .contact-heading {
+    font-size: clamp(1.65rem, 2.5vw + 0.5rem, 2.15rem);
+  }
+
   .hero-grid,
   .about-grid {
     grid-template-columns: 1fr;
@@ -1374,12 +1426,9 @@ img {
   }
 
   .projects-grid,
+  .badges-grid,
   .education-grid,
   .contact-pills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1418,11 +1467,88 @@ img {
     padding: 4rem 0;
   }
 
+  /* Section Header Sizing on Mobile & Small Tablets */
+  .section-header {
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .about-top-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header-title {
+    font-size: clamp(1.45rem, 4.5vw + 0.2rem, 1.85rem);
+    line-height: 1.25;
+    margin-bottom: 0.35rem;
+  }
+
+  .section-eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.35rem;
+  }
+
+  .section-header-desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    max-width: 100%;
+  }
+
+  .story-desc {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+    max-width: 100%;
+  }
+
+  .principles-heading {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-tag {
+    font-size: 1.3rem;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-tag::before {
+    width: 1.75rem;
+  }
+
+  .section-tag-center {
+    margin-bottom: 2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.65rem, 5vw + 0.25rem, 2.15rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .contact-heading {
+    font-size: clamp(1.45rem, 4.5vw + 0.2rem, 1.85rem);
+    line-height: 1.25;
+  }
+
+  .contact-subtext {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
   .projects-grid,
-  .skills-grid,
+  .badges-grid,
   .education-grid,
-  .contact-pills-grid,
-  .value-cards-grid {
+  .contact-pills-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
@@ -1454,6 +1580,84 @@ img {
 @media (max-width: 480px) {
   .container {
     padding: 0 0.85rem;
+  }
+
+  .about-section,
+  .projects-section,
+  .skills-section,
+  .experience-section,
+  .education-section {
+    padding: 3.5rem 0;
+  }
+
+  .contact-section {
+    padding: 3rem 0;
+  }
+
+  /* Section Header Sizing on Compact Mobile Screens */
+  .section-header {
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .about-top-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .section-header-title {
+    font-size: 1.38rem;
+    line-height: 1.25;
+    margin-bottom: 0.25rem;
+  }
+
+  .section-eyebrow {
+    font-size: 0.74rem;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.25rem;
+  }
+
+  .section-header-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .story-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .principles-heading {
+    font-size: 1.02rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-tag {
+    font-size: 1.15rem;
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-tag::before {
+    width: 1.25rem;
+  }
+
+  .section-tag-center {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.55rem;
+    line-height: 1.22;
+  }
+
+  .contact-heading {
+    font-size: 1.32rem;
+    line-height: 1.25;
+  }
+
+  .contact-subtext {
+    font-size: 0.84rem;
   }
 
   .brand-logo {
@@ -1501,6 +1705,17 @@ img {
     width: 2.6rem;
     height: 2.6rem;
     font-size: 1.15rem;
+  }
+
+  .badge-card {
+    padding: 0.9rem 1rem;
+    gap: 0.85rem;
+    border-radius: 1rem;
+  }
+
+  .badge-img-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .contact-card-compact {
@@ -1591,14 +1806,7 @@ img {
   text-decoration: none;
 }
 
-.progress-95 { width: 95%; }
-.progress-92 { width: 92%; }
-.progress-98 { width: 98%; }
-.progress-90 { width: 90%; }
-.progress-88 { width: 88%; }
-.progress-94 { width: 94%; }
-.progress-85 { width: 85%; }
-.progress-80 { width: 80%; }
+
 
 .mobile-drawer-header {
   display: flex;
