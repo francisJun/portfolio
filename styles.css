@@ -491,7 +491,7 @@ img {
   object-fit: cover;
   object-position: center top;
   display: block;
-  transition: filter 0.6s ease, transform 0.6s ease;
+  transition: transform 0.6s ease;
 }
 
 .portrait-frame:hover .portrait-img {
@@ -501,8 +501,8 @@ img {
 .portrait-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--bg-base) 0%, transparent 60%);
-  opacity: 0.4;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, transparent 20%);
+  pointer-events: none;
 }
 
 .code-badge {
