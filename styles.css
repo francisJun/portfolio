@@ -469,10 +469,13 @@ img {
 .hero-portrait-card {
   position: relative;
   width: 100%;
+  max-width: 420px;
+  justify-self: center;
+  margin: 0 auto;
 }
 
 .portrait-frame {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background-color: var(--bg-surface-high);
@@ -486,6 +489,8 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
+  display: block;
   transition: filter 0.6s ease, transform 0.6s ease;
 }
 
@@ -510,6 +515,8 @@ img {
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-card);
   backdrop-filter: blur(12px);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .code-badge-dots {
@@ -529,8 +536,10 @@ img {
 
 .code-badge-text {
   font-family: var(--font-mono);
-  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+  font-size: clamp(0.72rem, 1.5vw, 0.85rem);
   color: var(--color-secondary);
+  word-break: break-word;
+  white-space: normal;
 }
 
 /* --------------------------------------------------------------------------
@@ -1425,6 +1434,12 @@ img {
     gap: 3rem;
   }
 
+  .hero-portrait-card {
+    max-width: 380px;
+    margin: 0 auto;
+    justify-self: center;
+  }
+
   .projects-grid,
   .badges-grid,
   .education-grid,
@@ -1543,6 +1558,21 @@ img {
   .contact-subtext {
     font-size: 0.88rem;
     line-height: 1.55;
+  }
+
+  .hero-portrait-card {
+    max-width: 320px;
+    margin: 0 auto;
+    justify-self: center;
+  }
+
+  .code-badge {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 1.25rem;
+    padding: 0.9rem 1.15rem;
   }
 
   .projects-grid,
@@ -1681,8 +1711,11 @@ img {
     padding-bottom: 3.5rem;
   }
 
-  .portrait-frame {
-    max-height: 20rem;
+  .hero-portrait-card {
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+    justify-self: center;
   }
 
   .code-badge {
